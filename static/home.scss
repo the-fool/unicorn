@@ -1,0 +1,46 @@
+@import './_variables.scss';
+
+section {
+  text-align: center;
+}
+svg {
+  fill: $primary;
+}
+#intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $light;
+
+  #intro-content {
+    padding: 10rem 2rem 2rem;
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+#bg {
+  background-image: url("/img/group.jpg");
+  position: absolute;
+  background-size: cover;
+  background-position: top;
+  left: 0;
+  top: 4rem;
+  right: 0;
+  bottom: 0;
+  filter: brightness(0.4);
+}
+
+#graduates {
+  text-align: center;
+}
+
+.pic-item {
+  padding: 1.2rem 0;
+}

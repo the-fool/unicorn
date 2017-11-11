@@ -1,0 +1,29 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Unicorn"
+
+[params]
+    [[params.manifesto]]
+      title = "Think like a developer"
+      svg = "compy.svg"
+      sub = "You will learn to build your ideas with code"
+
+
+    [[params.manifesto]]
+      title = "Learn by doing"
+      svg = "people.svg"
+      sub = "You will learn to build your ideas with code"
+
+    [[params.manifesto]]
+      title = "Change your future"
+      svg = "rocket.svg"
+      sub = "You will learn to build your ideas with code"
+
+    [[params.companies]]
+    name = "Avista"
+
+    [[params.companies]]
+    name = "Subway"
+
+
+    

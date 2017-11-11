@@ -1,0 +1,36 @@
+@import './_variables.scss';
+@import 'bootstrap.scss';
+@import './bootswatch/_flatly.scss';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  border: 0;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 200;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  border-bottom: 5px solid $primary;
+  padding: 10px 16px;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-brand {
+  img {
+    height: 3.5rem;
+  }
+}
