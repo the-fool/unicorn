@@ -15,6 +15,17 @@ h1, h2, h3, h4, h5 {
   font-family: 'Quicksand', sans-serif;
 }
 
+p {
+  letter-spacing: 0.11px;
+  font-size: 18.9px;
+  line-height: 28.8px;
+  word-wrap: break-word;
+  color: #666;
+}
+
+strong {
+  color: $primary;
+}
 
 .navbar {
   position: absolute;
@@ -32,5 +43,31 @@ h1, h2, h3, h4, h5 {
 .navbar-brand {
   img {
     height: 3.5rem;
+  }
+}
+
+
+footer {
+
+  form {
+    input.form-control {
+      max-width: 15rem;
+      border-radius: 1px;
+      padding: 15px;
+      border-radius: 1px;
+      border: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+
+      &:focus {
+        border: 0;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .bottom-matter {
+    text-align: center;
   }
 }

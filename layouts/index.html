@@ -9,51 +9,82 @@
     </div>
     <div id="intro-content" class="col">
       <h1>
-        Learn to Code
+        {{ .Params.zinger }}
       </h1>
+
       <br>
-      <h2>Take the reins on your new career</h2>
+
+      <h2>
+        {{ .Params.sub_zinger }}
+      </h2>
+
       <br>
-      <a class="btn btn-primary" href="#">Get Started</a>
+
+      <a class="btn btn-primary" href="#">{{ .Params.cta }}</a>
     </div>
   </section>
 
-  <br> 
-  
-  <section id="manifesto">
+  <br>
 
-    <h3>Our manifesto</h3>
+  <section id="manifesto" class="row">
+    <div class="col">
+      <h3 class="heading">Our manifesto</h3>
 
-    <div class="pic-item-list">
-      {{ range .Site.Params.manifesto }}
+      <div class="pic-item-list">
+        {{ range .Site.Params.manifesto }}
 
-      <div class="pic-item">
-        <div class="pic">
-          {{ partial (printf "svgs/%s" .svg) }}
+        <div class="pic-item">
+          <div class="top">
+            <div class="pic">
+              {{ partial (printf "svgs/%s" .svg) }}
+            </div>
+            <h4 class="title">
+              {{ .title }}
+            </h4>
+          </div>
+          <div class="subtext">
+            {{ .sub }}
+          </div>
         </div>
-        <h4 class="title">
-          {{ .title }}
-        </h4>
-        <div class="subtext">
-          {{ .sub }}
-        </div>
+
+        {{ end }}
+
       </div>
-
-      {{ end }}
-
     </div>
 
   </section>
-  <section id="graduates">
-    <h3>Our graduates have worked for:</h3>
-    <ul>
-      {{ range .Site.Params.companies }}
 
-      <li>{{ .name }}</li>
+  <section id="careers" class="row">
+    <div id="career-bg"></div>
 
-      {{ end }}
-    </ul>
+    <div class="col content">
+      <h2>Your Career is Our Mission</h2>
+      <h4>We partner with local companies eager to hire graduates</h4>
+      <hr>
+      <div id="company-list">
+        {{ range .Site.Params.companies }}
 
-  </div>
+        <div class="company-logo-pic">
+          <img src="/img/comp_logos/{{ .logo }}" alt="{{ .name }}">
+        </div>
+
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="row">
+    <div class="col">
+      <h3 class="heading">About <strong>Unicorn</strong></h3>
+      <hr>
+      <p>
+        {{ partial "home/about.html" }} 
+      </p>
+    </div>
+  </section>
+
+  <section id="courses" class="row">
+
+  </section>
 </main>
 {{ end }}

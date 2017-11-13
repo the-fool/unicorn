@@ -3,8 +3,14 @@ languageCode = "en-us"
 title = "Unicorn"
 
 [params]
+
     [[params.manifesto]]
-      title = "Think like a developer"
+      title = "Career Focused"
+      svg = "rocket.svg"
+      sub = "Local and regional employers and industry leaders are involved in your education.  Our curriculum is specially tailored to real needs in the job sector, and build blah blah "
+
+    [[params.manifesto]]
+      title = "Think In Code"
       svg = "compy.svg"
       sub = "You will learn to build your ideas with code"
 
@@ -14,16 +20,28 @@ title = "Unicorn"
       svg = "people.svg"
       sub = "You will learn to build your ideas with code"
 
-    [[params.manifesto]]
-      title = "Change your future"
-      svg = "rocket.svg"
-      sub = "You will learn to build your ideas with code"
+
 
     [[params.companies]]
     name = "Avista"
+    logo = "avista.png"
 
     [[params.companies]]
-    name = "Subway"
+    name = "CyberCoders"
+    logo = "cyber_coders.png"
 
+    [[params.companies]]
+    name = "Ecova"
+    logo = "ecova.png"
 
-    
+    [[params.companies]]
+    name = "F5"
+    logo = "f5.png"
+
+    [[params.companies]]
+    name = "Imprezzio"
+    logo = "imprezzio.png"
+
+    [[params.companies]]
+    name = "Next IT"
+    logo = "next_it.png"
