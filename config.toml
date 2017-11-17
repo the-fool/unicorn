@@ -45,3 +45,16 @@ title = "Unicorn"
     [[params.companies]]
     name = "Next IT"
     logo = "next_it.png"
+
+
+    [[params.courses]]
+    name = "Web Development"
+    logo = "web_dev.svg"
+    desc = "Learn to build robust, beautiful, interactive web applications.  This course focuses on the contemporary skills needed for a career in web development today."
+    status = "closed"
+
+    [[params.courses]]
+    name = "Full Stack Foundations"
+    logo = "full_stack.svg"
+    desc = "Learn to build robust, beautiful, interactive web applications.  This course focuses on the contemporary skills needed for a career in web development today."
+    status = "closed"

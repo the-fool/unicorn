@@ -1,5 +1,7 @@
 @import './_variables.scss';
 
+$svg-square: 70px;
+
 .full-abs {
   position: absolute;
   top: 0;
@@ -15,6 +17,7 @@ section, footer {
 
 svg {
   fill: $primary;
+  stroke: $primary;
 }
 
 section#intro {
@@ -134,5 +137,39 @@ section#about {
   }
 }
 
+$course-left-padding: 1rem;
+
 section#courses {
+  .heading {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #courses-list {
+    .course-item {
+      display: flex;
+      margin-bottom: 2rem;
+
+      .left {
+        .course-pic {
+          height: $svg-square;
+          width: $svg-square;
+        }
+      }
+
+      .right {
+        margin-left: 1rem;
+        .name {
+          height: $svg-square;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+
+      .desc {
+      }
+    }
+  }
 }
