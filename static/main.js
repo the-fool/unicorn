@@ -17,12 +17,8 @@ function subscribe() {
     button.prop('disabled', true);
     $.ajax({
         method: "POST",
-        url: 'https://7zao5vcvl2.execute-api.us-west-2.amazonaws.com/prod/email',
-        data: JSON.stringify({
-            body: JSON.stringify(data),
-            subject: 'subscriber',
-            reply: 'admin@unicorncode.org'
-        }),
+        url: 'https://wjmlba6cxe.execute-api.us-west-2.amazonaws.com/prod/subscribers',
+        data: JSON.stringify(data),
         crossDomain: true,
         contentType: 'application/json',
         success: subscribeSuccess,
@@ -39,5 +35,6 @@ function subscribeSuccess() {
 }
 
 function subscribeError() {
+  console.log('error');
 
 }
