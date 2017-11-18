@@ -16,6 +16,20 @@ h1, h2, h3, h4, h5 {
   font-family: 'Quicksand', sans-serif;
 }
 
+@media screen and (min-width: $medium-screen) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+}
+
 p {
   letter-spacing: 0.11px;
   font-size: 18.9px;
@@ -117,14 +131,9 @@ section, footer {
 
   section, footer {
     .col {
-      padding-left: 0px;
       max-width: 90%;
       margin: auto
     }
-  }
-
-  footer #subscribe > .col {
-    padding-left: $svg-glyph-width + $svg-glyph-margin;
   }
 }
 

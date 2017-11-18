@@ -2,6 +2,9 @@
 
 $p-width: 40rem;
 
+$left-line: $svg-glyph-width + $svg-glyph-margin;
+
+
 .full-abs {
   position: absolute;
   top: 0;
@@ -161,7 +164,6 @@ section#courses {
   .heading {
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 2rem;
   }
 
   #courses-list {
@@ -198,8 +200,14 @@ section#courses {
 
 
 @media screen and (min-width: $medium-screen) {
-
-
+  section#manifesto, section#courses {
+    .heading {
+      padding-left: $left-line;
+      text-align: left;
+      font-weight: bold;
+      color: $primary;
+    }
+  }
   section#manifesto {
     p {
       margin-left: $svg-glyph-width + $svg-glyph-margin;
@@ -210,5 +218,15 @@ section#courses {
     padding: 4rem 0;
   }
 
+  section#about {
+    p {
+      padding-left: $left-line;
+      padding-right: $left-line;
+      text-align: justify;
+    }
+  }
 
+  footer #subscribe .form-container {
+    padding-left: $svg-glyph-width + $svg-glyph-margin;
+  }
 }
