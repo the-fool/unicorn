@@ -57,12 +57,16 @@ $button-vert-padding: 0.575rem;
 
 footer {
 
-  #contact {
+  #contact, #thanks {
     background-color: $primary;
     padding: 2rem 0;
+
     .heading, p {
       color: $white !important;
     }
+  }
+
+  #contact {
     form {
       input.form-control {
         max-width: 15rem;
