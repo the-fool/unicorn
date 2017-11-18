@@ -200,6 +200,27 @@ section#courses {
 
 
 @media screen and (min-width: $medium-screen) {
+  section#intro {
+    #intro-content {
+      height: 90vh;
+      padding-top: 30vh;
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10vh;
+      }
+
+      a {
+        padding: 0.7rem;
+        background-color: transparent;
+        border-width: 3px;
+        font-size: 1.5rem;
+        color: #fff;
+      }
+    }
+  }
   section#manifesto, section#courses {
     .heading {
       padding-left: $left-line;
