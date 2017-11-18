@@ -3,3 +3,4 @@ public
 **/dist/**
 lambdas/**
 !lambdas/**/handler.py
+!lambdas/**/requirements.txt
