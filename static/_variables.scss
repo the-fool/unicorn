@@ -1,10 +1,18 @@
 @import './bootswatch/_variables.scss';
 
 $medium-screen: 40rem;
-
+$large-screen: 60rem;
 $transition-collapse:         height 0s ease !default;
 
 // Colors
 
-$gun-metal: #292727
+$gun-metal: #292727;
 
+
+// GEOMETRY
+
+$compact-vert-padding: 1rem;
+$full-vert-padding: 2rem;
+
+$svg-glyph-margin: 2rem;
+$svg-glyph-width: 5rem;

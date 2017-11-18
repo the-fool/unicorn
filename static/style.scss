@@ -72,20 +72,27 @@ footer {
   }
 
   #subscribe {
-    form {
-      input.form-control {
-        max-width: 15rem;
-        border-radius: 1px;
-        padding: 15px;
-        border-radius: 1px;
-        border: none;
-        font-size: 16px;
-        text-transform: uppercase;
-        margin-bottom: 30px;
+    .form-container {
+      max-width: 30rem;
 
-        &:focus {
-          border: 0;
-          box-shadow: none;
+      p {
+        text-align: justify;
+        word-break: break-word;
+      }
+      form {
+        input.form-control {
+          border-radius: 1px;
+          padding: 15px;
+          border-radius: 1px;
+          border: none;
+          font-size: 16px;
+          text-transform: uppercase;
+          margin-bottom: 30px;
+
+          &:focus {
+            border: 0;
+            box-shadow: none;
+          }
         }
       }
     }
@@ -94,5 +101,37 @@ footer {
   .bottom-matter {
     padding-top: 2rem;
     text-align: center;
+  }
+}
+
+section, footer {
+  padding-top: $compact-vert-padding;
+  padding-bottom: $compact-vert-padding;
+}
+
+@media screen and (min-width: $medium-screen) {
+  section {
+    padding-top: $full-vert-padding;
+    padding-bottom: $full-vert-padding;
+  }
+
+  section, footer {
+    .col {
+      padding-left: 0px;
+      max-width: 90%;
+      margin: auto
+    }
+  }
+
+  footer #subscribe > .col {
+    padding-left: $svg-glyph-width + $svg-glyph-margin;
+  }
+}
+
+@media screen and (min-width: $large-screen) {
+  section, footer {
+    .col {
+      max-width: 85%;
+    }
   }
 }

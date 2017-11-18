@@ -1,10 +1,6 @@
 @import './_variables.scss';
 
-$compact-vert-padding: 1rem;
-$full-vert-padding: 2rem;
-
-$svg-glyph-margin: 2rem;
-$svg-glyph-width: 5rem;
+$p-width: 40rem;
 
 .full-abs {
   position: absolute;
@@ -14,15 +10,12 @@ $svg-glyph-width: 5rem;
   right: 0;
 }
 
-section, footer {
-  padding-top: $compact-vert-padding;
-  padding-bottom: $compact-vert-padding;
-}
 
 svg {
   fill: $primary;
   stroke: $primary;
 }
+
 
 section#intro {
   text-align: center;
@@ -80,7 +73,13 @@ section#manifesto {
         margin-right: $svg-glyph-margin;
       }
     }
+
+    p {
+      max-width: $p-width;
+    }
   }
+
+
 }
 
 
@@ -190,6 +189,7 @@ section#courses {
       }
 
       .desc {
+        max-width: $p-width;
       }
     }
   }
@@ -198,17 +198,6 @@ section#courses {
 
 
 @media screen and (min-width: $medium-screen) {
-  section {
-    padding-top: $full-vert-padding;
-    padding-bottom: $full-vert-padding;
-  }
-
-  section {
-    .col {
-      max-width: 80%;
-      margin: auto
-    }
-  }
 
 
   section#manifesto {
