@@ -8,12 +8,12 @@ function subscribe() {
     };
 
     const button = $('#subscribe-form button');
-  button.text('Computing.');
-  let dots = 1;
-  const interval = setInterval(() => {
-    button.text(`Computing${'.'.repeat(dots)}`);
-    dots = (dots + 1) % 4;
-  }, 250)
+    button.text('Computing.');
+    let dots = 1;
+    const interval = setInterval(() => {
+        button.text(`Computing${'.'.repeat(dots)}`);
+        dots = (dots + 1) % 4;
+    }, 250);
     button.prop('disabled', true);
     $.ajax({
         method: "POST",
@@ -34,10 +34,10 @@ function subscribe() {
 }
 
 function subscribeSuccess() {
-  $('#contact').hide();
-  $('#thanks').show();
+    $('#contact').hide();
+    $('#thanks').show();
 }
 
 function subscribeError() {
-  
+
 }
