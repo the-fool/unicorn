@@ -1,6 +1,10 @@
 @import './_variables.scss';
 
-$svg-square: 70px;
+$compact-vert-padding: 1rem;
+$full-vert-padding: 2rem;
+
+$svg-glyph-margin: 2rem;
+$svg-glyph-width: 5rem;
 
 .full-abs {
   position: absolute;
@@ -11,8 +15,8 @@ $svg-square: 70px;
 }
 
 section, footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: $compact-vert-padding;
+  padding-bottom: $compact-vert-padding;
 }
 
 svg {
@@ -55,6 +59,12 @@ section#manifesto {
     text-align: center;
   }
 
+  hr {
+    width: 40%;
+    opacity: .8;
+    border-top: 2px solid $primary;
+  }
+
   .pic-item {
     padding: 1.2rem 0;
 
@@ -62,14 +72,18 @@ section#manifesto {
       margin-bottom: 1rem;
       display: flex;
       align-items: center;
+      text-transform: uppercase;
+
       svg {
-        height: 80px;
-        width: 80px;
-        margin-right: 2rem;
+        height: $svg-glyph-width;
+        width: $svg-glyph-width;
+        margin-right: $svg-glyph-margin;
       }
     }
   }
 }
+
+
 
 section#careers {
   text-align: center;
@@ -124,6 +138,7 @@ section#careers {
   }
 }
 
+
 section#about {
   background-color: $gun-metal;
 
@@ -142,7 +157,6 @@ section#about {
   }
 }
 
-$course-left-padding: 1rem;
 
 section#courses {
   .heading {
@@ -158,18 +172,20 @@ section#courses {
 
       .left {
         .course-pic {
-          height: $svg-square;
-          width: $svg-square;
+          height: $svg-glyph-width;
+          width: $svg-glyph-width;
         }
+
       }
 
       .right {
-        margin-left: 1rem;
+        margin-left: $svg-glyph-margin;
         .name {
-          height: $svg-square;
+          height: $svg-glyph-width;
           display: flex;
           flex-direction: column;
           justify-content: center;
+          text-transform: uppercase;
         }
       }
 
@@ -177,4 +193,33 @@ section#courses {
       }
     }
   }
+}
+
+
+
+@media screen and (min-width: $medium-screen) {
+  section {
+    padding-top: $full-vert-padding;
+    padding-bottom: $full-vert-padding;
+  }
+
+  section {
+    .col {
+      max-width: 80%;
+      margin: auto
+    }
+  }
+
+
+  section#manifesto {
+    p {
+      margin-left: $svg-glyph-width + $svg-glyph-margin;
+    }
+  }
+
+  section#careers {
+    padding: 4rem 0;
+  }
+
+
 }

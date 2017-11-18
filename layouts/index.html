@@ -30,6 +30,8 @@
     <div class="col">
       <h3 class="heading">Our manifesto</h3>
 
+      <hr>
+
       <div class="pic-item-list">
         {{ range .Site.Params.manifesto }}
 
@@ -42,9 +44,9 @@
               {{ .title }}
             </h4>
           </div>
-          <div class="subtext">
+          <p class="subtext">
             {{ .sub }}
-          </div>
+          </p>
         </div>
 
         {{ end }}

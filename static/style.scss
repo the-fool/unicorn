@@ -58,7 +58,11 @@ $button-vert-padding: 0.575rem;
 
 footer {
 
-  #contact, #thanks {
+  .heading {
+    font-weight: bold;
+  }
+
+  #subscribe, #thanks {
     background-color: $primary;
     padding: 2rem 0;
 
@@ -67,7 +71,7 @@ footer {
     }
   }
 
-  #contact {
+  #subscribe {
     form {
       input.form-control {
         max-width: 15rem;
