@@ -46,28 +46,44 @@ strong {
   }
 }
 
+// BUTTON Overrides
+$button-vert-padding: 0.575rem;
+
+.btn {
+  padding-top: $button-vert-padding;
+  padding-bottom: $button-vert-padding;
+}
+
 
 footer {
 
-  form {
-    input.form-control {
-      max-width: 15rem;
-      border-radius: 1px;
-      padding: 15px;
-      border-radius: 1px;
-      border: none;
-      font-size: 16px;
-      text-transform: uppercase;
-      margin-bottom: 30px;
+  #contact {
+    background-color: $primary;
+    padding: 2rem 0;
+    .heading, p {
+      color: $white !important;
+    }
+    form {
+      input.form-control {
+        max-width: 15rem;
+        border-radius: 1px;
+        padding: 15px;
+        border-radius: 1px;
+        border: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
 
-      &:focus {
-        border: 0;
-        box-shadow: none;
+        &:focus {
+          border: 0;
+          box-shadow: none;
+        }
       }
     }
   }
 
   .bottom-matter {
+    padding-top: 2rem;
     text-align: center;
   }
 }
