@@ -87,17 +87,23 @@ section#careers {
     z-index: 0;
     height: 100%;
     width: 100%;
+
     background-repeat: no-repeat;
     background-image: url("/img/manlady.jpg");
     background-size: cover;
-    background-position: 66%;
+    background-position: 66% 50%;
     mix-blend-mode: multiply;
     background-color: $primary;
     filter: grayscale(100%);
     opacity: 0.8;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
+  @media screen and(min-width: 600px) {
+    #career-bg {
+      background-attachment: fixed;
+    }
+  }
   #company-list {
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +114,7 @@ section#careers {
     .company-logo-pic {
       margin: 1rem;
       max-height: 2rem;
-      flex: 1;
+      flex: 1 0 auto;
 
       img {
         height: 100%;
@@ -119,13 +125,13 @@ section#careers {
   }
 }
 
-
 section#about {
   background-color: $gun-metal;
 
   .heading {
     text-align: center;
   }
+
   hr {
     width: 40%;
     opacity: 0.8;
