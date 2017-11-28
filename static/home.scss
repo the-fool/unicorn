@@ -1,6 +1,6 @@
 @import './_variables.scss';
 
-$p-width: 40rem;
+$p-width: 32rem;
 
 $left-line: $svg-glyph-width + $svg-glyph-margin;
 
@@ -157,6 +157,7 @@ section#manifesto {
 
     svg {
       stroke: transparent;
+      fill: $gun-metal;
       height: $svg-glyph-width;
       width: $svg-glyph-width;
     }
@@ -165,8 +166,17 @@ section#manifesto {
       text-transform: uppercase;
     }
 
+    svg, h4 {
+      margin-bottom: 1rem;
+    }
+
     p {
+      margin: auto;
       max-width: $p-width;
+    }
+
+    &:not(:first-child) {
+      margin-left: 2rem;
     }
   }
 
