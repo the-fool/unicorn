@@ -50,12 +50,13 @@ section#intro {
 }
 
 section#synopsis {
-  background-color: $navy;
+  background-color: $primary;
 
   svg {
     height: $svg-glyph-width;
     width: $svg-glyph-width;
     stroke: transparent;
+    fill: $white;
   }
 
   #brief-synopsis {
@@ -67,8 +68,13 @@ section#synopsis {
   @media screen and (min-width: $medium-screen) {
     $extra: 2rem;
     $splitter: 0.5rem;
+    $padder: 1rem;
 
-    margin-left: -($extra + 1rem);
+    #brief-synopsis {
+      padding-top: $padder;
+      padding-bottom: $padder;
+    }
+
     svg {
       margin-right: $splitter;
       height: $svg-glyph-width + $extra;
@@ -78,17 +84,8 @@ section#synopsis {
     #brief-synopsis {
       text-align: left;
       padding-left: $svg-glyph-margin - $splitter;
-      border-left: 2px solid $primary;
+      border-left: 2px solid $white;
       margin-bottom: 0;
-    }
-  }
-
-  @media screen and (min-width: $large-screen) {
-    $padder: 1rem;
-
-    #brief-synopsis {
-      padding-top: $padder;
-      padding-bottom: $padder;
     }
   }
 }
