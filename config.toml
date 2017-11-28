@@ -4,7 +4,7 @@ title = "Unicorn"
 
 [params]
     [[params.facts]]
-      big = "$84K"
+      big = "$84.5K"
       icon = "ic_attach_money_white_24px.svg"
       sub = "Average Salary"
       explanation = "At the end of 2017, the average salary for software developers in Spokane County was $84,353.  This figure varies from region to region, and for Washington State in general the average salary was $133,194."
