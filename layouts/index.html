@@ -23,103 +23,17 @@
       <a class="btn btn-primary" href="#">{{ .Params.cta }}</a>
     </div>
   </section>
+  {{ partial "home/synopsis.html" . }}
 
-  <br>
+  {{ partial "home/manifesto.html" . }}
 
-  <section id="manifesto" class="row">
-    <div class="col">
-      <h3 class="heading">Our manifesto</h3>
+  {{ partial "home/careers.html" . }}
 
-      <br>
+  {{ partial "home/facts.html" . }}
 
-      <div class="pic-item-list">
-        {{ range .Site.Params.manifesto }}
+  {{ partial "home/about.html" . }}
 
-        <div class="pic-item">
-          <div class="top">
-            <div class="pic">
-              {{ partial (printf "svgs/%s" .svg) }}
-            </div>
-            <h4 class="title">
-              {{ .title }}
-            </h4>
-          </div>
-          <p class="subtext">
-            {{ .sub }}
-          </p>
-        </div>
+  {{ partial "home/courses.html" . }}
 
-        {{ end }}
-
-      </div>
-    </div>
-
-  </section>
-
-  <section id="careers" class="row">
-    <div id="career-bg"></div>
-
-    <div class="col content">
-      <h2>Your Career is Lorem Ipsum</h2>
-      <h4>We partner with local companies eager to hire graduates</h4>
-
-      <br>
-
-      <div id="company-list">
-        {{ range .Site.Params.companies }}
-
-        <div class="company-logo-pic">
-          <img src="/img/comp_logos/{{ .logo }}" alt="{{ .name }}">
-        </div>
-
-        {{ end }}
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="row">
-    <div class="col">
-      <h3 class="heading">About <strong>Unicorn</strong></h3>
-      <hr>
-      <p>
-        {{ partial "home/about.html" }}
-      </p>
-    </div>
-  </section>
-
-  <section id="courses" class="row">
-    <div class="col">
-      <h3 class="heading">Our Courses</h3>
-
-      <br>
-
-      <div id="courses-list">
-        {{ range .Site.Params.courses }}
-
-        <div class="course-item">
-          <!-- Mostly empty left column -->
-          <div class="left">
-            {{ partial (printf "svgs/%s" .logo) }}
-          </div>
-
-          <!-- Content in the right column -->
-          <div class="right">
-            <h4 class="name">
-              {{ .name }}
-            </h4>
-
-            <p class="desc">
-              {{ .desc }}
-            </p>
-            <br>
-            <a href="#" class="btn btn-primary disabled">Coming Soon!</a>
-          </div>
-
-
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
 </main>
 {{ end }}

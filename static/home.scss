@@ -49,6 +49,92 @@ section#intro {
   }
 }
 
+section#synopsis {
+  background-color: $navy;
+
+  svg {
+    height: $svg-glyph-width;
+    width: $svg-glyph-width;
+    stroke: transparent;
+  }
+
+  #brief-synopsis {
+    color: $white;
+    text-align: center;
+
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    $extra: 2rem;
+    $splitter: 0.5rem;
+
+    margin-left: -($extra + 1rem);
+    svg {
+      margin-right: $splitter;
+      height: $svg-glyph-width + $extra;
+      width: $svg-glyph-width + $extra;
+      stroke: transparent;
+    }
+    #brief-synopsis {
+      text-align: left;
+      padding-left: $svg-glyph-margin - $splitter;
+      border-left: 2px solid $primary;
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    $padder: 1rem;
+
+    #brief-synopsis {
+      padding-top: $padder;
+      padding-bottom: $padder;
+    }
+  }
+}
+
+section#facts {
+  background-color: $navy;
+
+  .fact-item {
+    flex: 1;
+    margin: 0 1rem 2rem;
+    max-width: 26rem;
+  }
+
+  .top {
+    height: $svg-glyph-width + 1rem;
+
+    .icon {
+      height: 80%;
+
+      svg {
+        height: 100%;
+      }
+    }
+
+    header {
+      margin-left: 1rem;
+      > * {
+        color: $white;
+        margin-bottom: 0;
+      }
+      h4 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: small;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .bot * {
+    text-align: center;
+    color: #aaa;
+  }
+}
+
 section#manifesto {
 
   .heading {

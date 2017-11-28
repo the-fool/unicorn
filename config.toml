@@ -3,6 +3,25 @@ languageCode = "en-us"
 title = "Unicorn"
 
 [params]
+    [[params.facts]]
+      big = "$84K"
+      icon = "ic_attach_money_white_24px.svg"
+      sub = "Average Salary"
+      explanation = "At the end of 2017, the average salary for software developers in Spokane County was $84,353.  This figure varies from region to region, and for Washington State in general the average salary was $133,194."
+
+    [[params.facts]]
+      big = "22,000"
+      icon = "ic_trending_up_white_24px.svg"
+      sub = "New Softawer Jobs"
+      explanation = "Software development is one of the largest employment sectors in Washington State, with over 75,000 currently working.  State-level forecasts predict an average growth rate of 4.2% in the near term, with over 20,000 new jobs being added."
+
+    [[params.facts]]
+      big = "92%"
+      icon = "ic_important_devices_white_24px.svg"
+      sub = "Most Demanded Skill"
+      explanation = "In Washington State 21 of the 25 most common in-demand skills in the state are related to software development.  Learning to write code is the most valuable skill today."
+    
+
 
     [[params.manifesto]]
       title = "Career Focused"

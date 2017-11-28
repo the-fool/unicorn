@@ -1,0 +1,37 @@
+<section id="facts" class="row">
+  <div class="col">
+    <div class="fact-list
+                d-flex
+
+                align-items-center
+                flex-column
+
+                align-items-lg-start
+                flex-lg-row
+                ">
+
+      {{ range .Site.Params.facts }}
+
+      <div class="fact-item">
+
+        <div class="top d-flex flex-row align-items-center justify-content-center">
+          <div class="icon">
+            {{ partial (printf "svgs/icons/%s" .icon) }}
+          </div>
+          <header>
+            <h4> {{ .big }} </h4>
+            <p> {{ .sub }} </p>
+          </header>
+        </div>
+        <div class="bot">
+          <p class="subtext">
+            {{ .explanation }}
+          </p>
+        </div>
+      </div>
+
+      {{ end }}
+
+    </div>
+  </div>
+</section>

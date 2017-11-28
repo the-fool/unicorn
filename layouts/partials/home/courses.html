@@ -1,0 +1,33 @@
+<section id="courses" class="row">
+  <div class="col">
+    <h3 class="heading">Our Courses</h3>
+
+    <br>
+
+    <div id="courses-list">
+      {{ range .Site.Params.courses }}
+
+      <div class="course-item">
+        <!-- Mostly empty left column -->
+        <div class="left">
+          {{ partial (printf "svgs/%s" .logo) }}
+        </div>
+
+        <!-- Content in the right column -->
+        <div class="right">
+          <h4 class="name">
+            {{ .name }}
+          </h4>
+
+          <p class="desc">
+            {{ .desc }}
+          </p>
+          <br>
+          <a href="#" class="btn btn-primary disabled">Coming Soon!</a>
+        </div>
+
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
