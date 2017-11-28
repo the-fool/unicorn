@@ -151,7 +151,9 @@ section#manifesto {
   }
 
   .pic-item {
+    flex: 1;
     padding: 1.2rem 0;
+    text-align: center;
 
     svg {
       stroke: transparent;
