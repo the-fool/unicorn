@@ -5,20 +5,16 @@
     <br>
 
     <div class="pic-item-list">
+
       {{ range .Site.Params.manifesto }}
 
       <div class="pic-item">
-        <div class="top">
-          <div class="pic">
-            {{ partial (printf "svgs/%s" .svg) }}
-          </div>
-          <h4 class="title">
-            {{ .title }}
-          </h4>
-        </div>
-        <p class="subtext">
-          {{ .sub }}
-        </p>
+
+        <div class="pic"> {{ partial (printf "svgs/icons/%s" .svg) }} </div>
+
+        <h4 class="title"> {{ .title }} </h4>
+
+        <p class="subtext"> {{ .sub }} </p>
       </div>
 
       {{ end }}

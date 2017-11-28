@@ -109,6 +109,7 @@ section#facts {
       height: 80%;
 
       svg {
+        stroke: transparent;
         height: 100%;
       }
     }
@@ -152,17 +153,14 @@ section#manifesto {
   .pic-item {
     padding: 1.2rem 0;
 
-    .top {
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      text-transform: uppercase;
+    svg {
+      stroke: transparent;
+      height: $svg-glyph-width;
+      width: $svg-glyph-width;
+    }
 
-      svg {
-        height: $svg-glyph-width;
-        width: $svg-glyph-width;
-        margin-right: $svg-glyph-margin;
-      }
+    h4 {
+      text-transform: uppercase;
     }
 
     p {
@@ -170,9 +168,7 @@ section#manifesto {
     }
   }
 
-
 }
-
 
 
 section#careers {
@@ -318,7 +314,7 @@ section#courses {
       }
     }
   }
-  section#manifesto, section#courses {
+  section#courses {
     .heading {
       padding-left: $left-line;
       text-align: left;
@@ -326,11 +322,6 @@ section#courses {
       color: $primary;
     }
 
-  }
-  section#manifesto {
-    p {
-      margin-left: $svg-glyph-width + $svg-glyph-margin;
-    }
   }
 
   section#careers {

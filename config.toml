@@ -25,18 +25,18 @@ title = "Unicorn"
 
     [[params.manifesto]]
       title = "Career Focused"
-      svg = "rocket.svg"
+      svg = "ic_school_white_24px.svg"
       sub = "Local and regional employers and industry leaders are involved in your education.  Our curriculum is specially tailored to real needs in the job sector, and build blah blah "
 
     [[params.manifesto]]
-      title = "Think In Code"
-      svg = "compy.svg"
+      title = "Flexible Schedule"
+      svg = "ic_free_breakfast_white_24px.svg"
       sub = "You will learn to build your ideas with code"
 
 
     [[params.manifesto]]
-      title = "Learn by doing"
-      svg = "people.svg"
+      title = "Think Like An Engineer"
+      svg = "ic_dvr_white_24px.svg"
       sub = "You will learn to build your ideas with code"
 
 
