@@ -1,5 +1,5 @@
 ---
-zinger: "Learn To Make Code Good"
-sub_zinger: "Neeeighh!!!"
+zinger: "Learn To Code"
+sub_zinger: "Begin Something Great"
 cta: "Get Started"
 ---

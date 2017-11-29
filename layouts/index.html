@@ -7,6 +7,15 @@
   <section id="intro" class="row">
     <div id="bg">
     </div>
+    <div id="intro-header">
+      <div class="left">
+      {{ partial "svgs/u_sign.svg" }}
+        <h5>Unicorn Code</h5>
+      </div>
+      <div class="right">
+        <h5>info@unicorncode.org</h5>
+      </div>
+    </div>
     <div id="intro-content" class="col">
       <h1>
         {{ .Params.zinger }}
@@ -20,12 +29,15 @@
 
       <br>
 
-      <a class="btn btn-primary" href="#">{{ .Params.cta }}</a>
+      <a class="btn btn-primary" href="#courses">{{ .Params.cta }}</a>
     </div>
   </section>
+
   {{ partial "home/synopsis.html" . }}
 
   {{ partial "home/manifesto.html" . }}
+
+  {{ partial "home/courses.html" . }}
 
   {{ partial "home/careers.html" . }}
 
@@ -33,7 +45,6 @@
 
   {{ partial "home/about.html" . }}
 
-  {{ partial "home/courses.html" . }}
 
 </main>
 {{ end }}

@@ -30,7 +30,7 @@ function subscribe() {
 }
 
 function subscribeSuccess() {
-  $('#contact').hide();
+  $('#subscribe').hide();
   $('#thanks').show();
 }
 

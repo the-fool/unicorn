@@ -2,9 +2,6 @@
 
 $p-width: 32rem;
 
-$left-line: $svg-glyph-width + $svg-glyph-margin;
-
-
 .full-abs {
   position: absolute;
   top: 0;
@@ -13,23 +10,53 @@ $left-line: $svg-glyph-width + $svg-glyph-margin;
   right: 0;
 }
 
+section h3 {
+  text-align: center;
+}
 
 svg {
   fill: $primary;
   stroke: $primary;
 }
 
-
 section#intro {
+  border-top: 8px solid $primary;
   text-align: center;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: $light;
 
+  #intro-header {
+    z-index: 9;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+
+    > * {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    svg {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    h5 {
+      color: $white;
+      font-size: 0.7rem;
+      margin: 0 0.4rem;
+    }
+  }
+
   #intro-content {
-    padding: 10rem 2rem 2rem;
+    padding: 8rem 2rem 5rem 2rem;
+
     h1 {
       font-size: 2rem;
     }
@@ -44,10 +71,53 @@ section#intro {
     background-image: url("/img/dev_camp.jpg");
     background-size: cover;
     background-position: top;
-    top: 4rem;
     filter: brightness(0.4);
   }
+
+  @media screen and (min-width: $medium-screen) {
+
+    #intro-header {
+      top: 2rem;
+      left: 2rem;
+      right: 2rem;
+
+      h5 {
+        font-size: 1.2rem;
+      }
+    }
+    #intro-content {
+      height: 80vh;
+      padding-top: 30vh;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15vh;
+      }
+
+      a {
+        padding: 0.7rem;
+        background-color: transparent;
+        border-width: 3px;
+        font-size: 1.5rem;
+        color: #fff;
+
+        &:hover {
+          background-color: rgba(255,255,255,0.1);
+        }
+
+        &:focus {
+          outline: 0;
+          box-shadow: none;
+        }
+      }
+    }
+  }
 }
+
 
 section#synopsis {
   background-color: $primary;
@@ -62,7 +132,6 @@ section#synopsis {
   #brief-synopsis {
     color: $white;
     text-align: center;
-
   }
 
   @media screen and (min-width: $medium-screen) {
@@ -91,7 +160,7 @@ section#synopsis {
 }
 
 section#facts {
-  background-color: $navy;
+  background-color: $gun-metal;
 
   .fact-item {
     flex: 1;
@@ -133,13 +202,18 @@ section#facts {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  @media screen and (min-width: $large-screen) {
+    padding: 2rem 0;
+    .fact-item {
+      margin-bottom: 0;
+    }
+  }
 }
 
-section#manifesto {
 
-  .heading {
-    text-align: center;
-  }
+section#manifesto {
+  background-color: $medium-gray;
 
   hr {
     width: 40%;
@@ -149,12 +223,12 @@ section#manifesto {
 
   .pic-item {
     flex: 1;
-    padding: 1.2rem 0;
     text-align: center;
+    margin: 0rem 1.2rem 1rem 1.2rem;
 
     svg {
       stroke: transparent;
-      fill: $gun-metal;
+      fill: $dark-gray;
       height: $svg-glyph-width;
       width: $svg-glyph-width;
     }
@@ -171,13 +245,13 @@ section#manifesto {
       margin: auto;
       max-width: $p-width;
     }
-
-    &:not(:first-child) {
-      margin-left: 2rem;
-    }
   }
-
 }
+
+
+
+
+// CAREERS
 
 
 section#careers {
@@ -234,118 +308,84 @@ section#careers {
 }
 
 
-section#about {
-  background-color: $gun-metal;
 
-  .heading {
-    text-align: center;
+
+// ABOUT
+
+
+section#about {
+  text-align: center;
+
+  h3 {
+    margin-bottom: 0;
   }
 
   hr {
+    margin: 2rem auto;
     width: 40%;
     opacity: 0.8;
     border-top: 2px solid $primary;
   }
 
-  p, h3, h4 {
-    color: $gray-100;
+  p {
+    max-width: 35rem;
+    margin: auto;
   }
 }
 
 
+
+
+// COURSES
+
+
 section#courses {
-  .heading {
-    text-align: center;
-    margin-top: 1rem;
-  }
 
   #courses-list {
     .course-item {
-      display: flex;
-      margin-bottom: 2rem;
+      padding: 2rem 1rem;
+      text-align: center;
+      max-width: 30rem;
+      margin: 1rem auto;
 
-      .left {
-        .course-pic {
+      .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 20rem;
+        margin: auto;
+        margin-bottom: 1rem;
+
+        svg {
           height: $svg-glyph-width;
           width: $svg-glyph-width;
         }
 
-      }
-
-      .right {
-        margin-left: $svg-glyph-margin;
-        .name {
-          height: $svg-glyph-width;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          text-transform: uppercase;
+        h4 {
+          margin-left: 1rem;
         }
       }
 
-      .desc {
-        max-width: $p-width;
-      }
-    }
-  }
-}
-
-
-
-@media screen and (min-width: $medium-screen) {
-  section#intro {
-    #intro-content {
-      height: 90vh;
-      padding-top: 30vh;
-      h1 {
-        font-size: 3rem;
-      }
-      h2 {
-        font-size: 2.5rem;
-        margin-bottom: 15vh;
-      }
-
-      a {
-        padding: 0.7rem;
-        background-color: transparent;
-        border-width: 3px;
-        font-size: 1.5rem;
-        color: #fff;
-
-        &:hover {
-          background-color: rgba(255,255,255,0.1);
-        }
-
-        &:focus {
-          outline: 0;
-          box-shadow: none;
+      .bot {
+        p {
+          text-align: center;
         }
       }
     }
   }
-  section#courses {
-    .heading {
-      padding-left: $left-line;
-      text-align: left;
-      font-weight: bold;
-      color: $primary;
+
+  @media screen and (min-width: $large-screen) {
+
+    #courses-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .course-item {
+        margin-right: 1rem;
+        margin-left: 1rem;
+      }
     }
-
-  }
-
-  section#careers {
-    padding: 4rem 0;
-  }
-
-  section#about {
-    p {
-      padding-left: $left-line;
-      padding-right: $left-line;
-      text-align: justify;
-    }
-  }
-
-  footer #subscribe .form-container {
-    padding-left: $svg-glyph-width + $svg-glyph-margin;
   }
 }

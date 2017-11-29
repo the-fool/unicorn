@@ -67,7 +67,7 @@ title = "Unicorn"
 
 
     [[params.courses]]
-    name = "Web Development"
+    name = "Front-End Development"
     logo = "web_dev.svg"
     desc = "Learn to build robust, beautiful, interactive web applications.  This course focuses on the contemporary skills needed for a career in web development today."
     status = "closed"
