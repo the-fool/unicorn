@@ -20,7 +20,7 @@ svg {
 }
 
 section#intro {
-  border-top: 8px solid $primary;
+  //border-top: 8px solid $primary;
   text-align: center;
   position: relative;
   text-align: center;
@@ -40,11 +40,6 @@ section#intro {
       display: flex;
       align-items: center;
       flex-direction: row;
-    }
-
-    svg {
-      height: 3rem;
-      width: 3rem;
     }
 
     h5 {
@@ -127,6 +122,7 @@ section#synopsis {
     width: $svg-glyph-width;
     stroke: transparent;
     fill: $white;
+    margin-bottom: 1rem;
   }
 
   #brief-synopsis {
@@ -145,10 +141,11 @@ section#synopsis {
     }
 
     svg {
-      margin-right: $splitter;
+      margin: 0 $splitter 0 0;
       height: $svg-glyph-width + $extra;
       width: $svg-glyph-width + $extra;
       stroke: transparent;
+      
     }
     #brief-synopsis {
       text-align: left;

@@ -8,7 +8,7 @@
         {{ block "title" . }} {{ .Site.Title }} {{ end }}
     </title>
 
-    {{ partial "head.html" }} 
+    {{ partial "head.html" . }} 
     
     {{ block "styles" . }} {{ end }}
 </head>
@@ -18,7 +18,7 @@
     <header>
     {{ block "header" . }}
     
-    {{ partial "navbar.html" }}
+    {{ partial "navbar.html" . }}
     
     {{ end }}
     </header>

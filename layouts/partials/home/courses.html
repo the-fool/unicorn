@@ -4,22 +4,23 @@
     <h3>Our Courses</h3>
 
     <div id="courses-list">
-      {{ range .Site.Params.courses }}
+
+      {{ range where .Site.RegularPages "Section" "courses" }}
 
       <div class="course-item card card-1">
         <div class="top">
 
-          {{ partial (printf "svgs/%s" .logo) }}
+          {{ partial (printf "svgs/%s" .Params.logo) }}
 
           <!-- Content in the right column -->
           <h4 class="name">
-            {{ .name }}
+            {{ .Params.name }}
           </h4>
         </div>
         <div class="bot">
 
           <p class="desc">
-            {{ .desc }}
+            {{ .Params.description }}
           </p>
 
           <a href="#" class="btn btn-primary disabled">

@@ -1,205 +1,211 @@
 @import './_variables.scss';
 @import 'bootstrap.scss';
 @import './bootswatch/_flatly.scss';
-
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  border: 0;
-  position: relative;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fafafa;
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
 }
 
-h1, h2, h3, h4, h5 {
-  font-weight: 200;
-  text-transform: uppercase;
-  font-family: 'Quicksand', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .card {
-  background: #fff;
-  border-radius: 2px;
-  margin: 1rem;
-
-
-  &.card-1 {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  }
-
-  &.card-1:hover {
-    box-shadow: 0 8px 12px rgba(0,0,0,0.25), 0 4px 9px rgba(0,0,0,0.22);
-  }
+    background: #fff;
+    border-radius: 2px;
+    margin: 1rem;
+    &.card-1 {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    }
+    &.card-1:hover {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25), 0 4px 9px rgba(0, 0, 0, 0.22);
+    }
 }
 
-
 p {
-  letter-spacing: 0.11px;
-  font-size: 16px;
-  line-height: 25px;
-  word-wrap: break-word;
-  color: #666;
+    letter-spacing: 0.11px;
+    font-size: 16px;
+    line-height: 25px;
+    word-wrap: break-word;
+    color: #666;
 }
 
 strong {
-  color: $primary;
+    color: $primary;
 }
-
-
-
 
 // NAVBAR
-
-
-nav.navbar {
-  z-index: 1023;
-  border-bottom: 5px solid $primary;
-  padding: 10px 16px;
-
-  .navbar-toggler {
-    border: 0;
-  }
-
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-
-    font-family: "quicksand";
-    svg {
-      margin-right: 0.7rem;
-      height: 3rem;
-      width: 3rem;
-      stroke: $primary;
-      fill: $primary;
+@media screen and (max-width: 450px) {
+    #brand-text {
+        font-size: 17px;
     }
-  }
 }
 
+@media screen and (max-width: 370px) {
+    #brand-text {
+        display: none;
+    }
+}
 
+nav.navbar {
+  font-family: quicksand;
+    z-index: 1023;
+    border-bottom: 5px solid $primary;
+    padding: 10px 15px;
 
-  // BUTTON Overrides
-  $button-vert-padding: 0.575rem;
+    .navbar-collapse {
+        justify-content: flex-end;
 
-  .btn {
+        &.show, &.collapsing {
+            .nav-item+.nav-item {
+                margin-left: 0;
+            }
+        }
+    }
+    .navbar-toggler {
+        border: 0;
+        .navbar-toggler-icon {
+            height: 2em;
+            width: 2em;
+        }
+    }
+    // strange relic in the bs source
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        font-family: "quicksand";
+        font-size: 24px;
+        svg {
+            margin-right: 0.7rem;
+            height: 4rem;
+            width: 4rem;
+            stroke: $primary;
+            fill: $primary;
+        }
+    }
+    .nav-item {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-style: normal;
+        letter-spacing: 3px;
+        text-decoration: none;
+        line-height: 2em;
+    }
+}
+
+// BUTTON Overrides
+$button-vert-padding: 0.575rem;
+.btn {
     padding-top: $button-vert-padding;
     padding-bottom: $button-vert-padding;
-  }
+}
 
-
-
-
-
-  // FOOTER
-
-
-  footer {
+// FOOTER
+footer {
     padding-bottom: 2rem;
-
-    #subscribe, #thanks {
-      background-color: $primary;
-      padding: 2rem 0;
-
-      .heading, p {
-        color: $white !important;
-      }
-    }
-
-    #subscribe {
-      .form-container {
-        margin: auto;
-        max-width: 25rem;
-
+    #subscribe,
+    #thanks {
+        background-color: $primary;
+        padding: 2rem 0;
+        .heading,
         p {
-          text-align: justify;
-          word-break: break-word;
+            color: $white !important;
         }
-        form {
-          input.form-control {
-            border-radius: 1px;
-            padding: 15px;
-            border-radius: 1px;
-            border: none;
-            font-size: 16px;
-            text-transform: uppercase;
-            margin-bottom: 30px;
-
-            &:focus {
-              border: 0;
-              box-shadow: none;
+    }
+    #subscribe {
+        .form-container {
+            margin: auto;
+            max-width: 25rem;
+            p {
+                text-align: justify;
+                word-break: break-word;
             }
-          }
+            form {
+                input.form-control {
+                    border-radius: 1px;
+                    padding: 15px;
+                    border-radius: 1px;
+                    border: none;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
+                    &:focus {
+                        border: 0;
+                        box-shadow: none;
+                    }
+                }
+            }
         }
-      }
     }
-
     .bottom-matter {
-      padding-top: 2rem;
-      text-align: center;
+        padding-top: 2rem;
+        text-align: center;
     }
-  }
+}
 
-  section {
+section {
     padding-top: $small-vert-padding;
     padding-bottom: $small-vert-padding;
-
     h3 {
-      margin-bottom: $small-vert-padding;
+        margin-bottom: $small-vert-padding;
     }
-  }
+}
 
-
-
-
-  // Medium screen
-
-
-  @media screen and (min-width: $medium-screen) {
+// Medium screen
+@media screen and (min-width: $medium-screen) {
     h1 {
-      font-size: 4rem;
+        font-size: 4rem;
     }
-
     h2 {
-      font-size: 3.5rem;
+        font-size: 3.5rem;
     }
-
     h3 {
-      font-size: 3rem;
+        font-size: 3rem;
+    }
+    section {
+        padding-top: $med-vert-padding;
+        padding-bottom: $med-vert-padding;
+    }
+    section h3 {
+        margin-bottom: $med-vert-padding;
+    }
+    section,
+    footer {
+        .col {
+            max-width: 90%;
+            margin: auto
+        }
+    }
+}
+
+// LARGE SCREEN
+@media screen and (min-width: $large-screen) {
+
+    // show menu on hover, rather than on click
+    ul.navbar-nav li.dropdown:hover>.dropdown-menu {
+        margin-top: 0;
+        display: block;
     }
 
     section {
-      padding-top: $med-vert-padding;
-      padding-bottom: $med-vert-padding;
+        padding-top: $large-vert-padding;
+        padding-bottom: $large-vert-padding;
     }
-
     section h3 {
-      margin-bottom: $med-vert-padding;
+        margin-bottom: $large-vert-padding;
     }
-
-    section, footer {
-      .col {
-        max-width: 90%;
-        margin: auto
-      }
-    }
-
-  }
-
-
-
-
-
-  // LARGE SCREEN
-
-
-  @media screen and (min-width: $large-screen) {
-    section {
-      padding-top: $large-vert-padding;
-      padding-bottom: $large-vert-padding;
-    }
-
-    section h3 {
-      margin-bottom: $large-vert-padding;
-    }
-  }
+}

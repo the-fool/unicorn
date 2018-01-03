@@ -65,7 +65,6 @@ title = "Unicorn"
     name = "Next IT"
     logo = "next_it.png"
 
-
     [[params.courses]]
     name = "Front-End Development"
     logo = "web_dev.svg"
