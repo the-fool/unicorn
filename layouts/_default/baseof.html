@@ -14,9 +14,14 @@
 </head>
 
 <body>
-        {{ block "header" . }}
-        {{ end }}
 
+    <header>
+    {{ block "header" . }}
+    
+    {{ partial "navbar.html" }}
+    
+    {{ end }}
+    </header>
 
     <main role="main">
     

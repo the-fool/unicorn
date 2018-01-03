@@ -54,10 +54,7 @@ strong {
 
 
 nav.navbar {
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  left: 0;
+  z-index: 1023;
   border-bottom: 5px solid $primary;
   padding: 10px 16px;
 
