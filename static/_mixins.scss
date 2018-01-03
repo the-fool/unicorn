@@ -1,0 +1,13 @@
+@mixin page-header-pic($picurl) {
+    background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url($picurl);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // background-image: url($picurl);
+    // mix-blend-mode: multiply;
+    // background-color: #f46524;
+
+    color: #fff;
+    text-align: center;
+}

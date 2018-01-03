@@ -72,9 +72,11 @@ nav.navbar {
     font-family: "quicksand";
     svg {
       margin-right: 0.7rem;
-      height: 3.5rem;
+      height: 3rem;
+      width: 3rem;
+      stroke: $primary;
+      fill: $primary;
     }
-
   }
 }
 

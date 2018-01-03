@@ -1,0 +1,8 @@
+@import 'mixins';
+@import 'variables';
+
+$header-pic: '/img/intro_header.jpeg';
+
+#page-header {
+  @include page-header-pic($header-pic);
+}
