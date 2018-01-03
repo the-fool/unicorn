@@ -1,39 +1,73 @@
 {{ define "styles" }}
 <link rel="stylesheet" href="/dist/page.css">
-<link rel="stylesheet" href="/dist/{{ .Params.styles}}"> 
-{{ end }} 
-
-{{ define "header" }} {{ partial "navbar.html" . }} {{ end }} 
-
-{{ define "main" }}
+<link rel="stylesheet" href="/dist/{{ .Params.styles}}"> {{ end }} {{ define "header" }} {{ partial "navbar.html" . }} {{ end }} {{ define "main" }}
 
 <div class="jumbotron jumbotron-fluid" id="page-header">
 
-  <div class="container">
+    <div class="container">
 
-    <h1> {{ .Params.name }}</h1>
+        <h1> {{ .Params.name }}</h1>
 
-  </div>
+    </div>
 
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      {{ .Content }}
+    <div class="row">
+        <div class="col-md-8">
+            {{ .Content }}
+        </div>
+        <div class="col-md-4">
+            <div class="course-details card">
+                <div class="card-body">
+                    <h5 class="card-title">Details:</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li> Evening track: {{ .Params.courseLength }} </li>
+                            <li> Schedule: {{ .Params.courseSchedule }} </li>
+                            <li> Tuition: ${{ .Params.tuition }} </li>
+                        </ul>
+                    </p>
+                    <a href="#" class="btn btn-primary">Enroll today</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-      <div class="course-details card">
-        <div class="card-body">
-          <h5 class="card-title">Details:</h5>
-          <p class="card-text">
-            <ul>
-              <li> Evening track: {{ .Params.courseLength }} </li>
-              <li> Schedule: {{ .Params.courseSchedule }} </li>
-              <li> Tuition: ${{ .Params.tuition }} </li>
-            </ul>
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+</div>
+
+<!--
+
+    Detailed Schedule
+
+    -->
+
+<div class="container-fluid" id="schedule">
+    <div class="row">
+        <div class="container">
+            <h2>Course Schedule</h2>
+
+            <div class="schedule-container">
+
+                {{ range .Params.detailSchedule}}
+
+                <div class="card svg-card">
+                    <div class="top">
+                        <i class="fab {{ .fa }}"></i>
+                        <div class="title">
+                            <h4> {{ .name }} </h4>
+                            <h5> {{ .topic }} </h5>
+                        </div>
+                    </div>
+
+                    <div class="bot">
+                        <p>
+                            {{ partial (printf .contentPartial) . }}
+                        </p>
+                    </div>
+                </div>
+
+                {{ end }}
+            </div>
         </div>
     </div>
 </div>

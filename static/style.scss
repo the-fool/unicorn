@@ -26,6 +26,35 @@ h5 {
     background: #fff;
     border-radius: 2px;
     margin: 1rem;
+    &.svg-card {
+        padding: 2rem 1rem;
+        text-align: center;
+        max-width: 30rem;
+        margin: 1rem auto;
+        .top {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 1rem;
+            svg {
+                color: $primary;
+                stroke: $primary;
+                fill: $primary;
+                height: $svg-glyph-width;
+                width: $svg-glyph-width;
+            }
+            .title {
+                margin-left: 1rem;
+            }
+        }
+        .bot {
+            p {
+                text-align: center;
+            }
+        }
+    }
     &.card-1 {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -61,15 +90,14 @@ strong {
 }
 
 nav.navbar {
-  font-family: quicksand;
+    font-family: quicksand;
     z-index: 1023;
     border-bottom: 5px solid $primary;
     padding: 10px 15px;
-
     .navbar-collapse {
         justify-content: flex-end;
-
-        &.show, &.collapsing {
+        &.show,
+        &.collapsing {
             .nav-item+.nav-item {
                 margin-left: 0;
             }
@@ -176,6 +204,11 @@ section {
     h3 {
         font-size: 3rem;
     }
+
+    .jumbotron {
+        padding: 5rem 2rem;
+    }
+
     section {
         padding-top: $med-vert-padding;
         padding-bottom: $med-vert-padding;
@@ -194,13 +227,11 @@ section {
 
 // LARGE SCREEN
 @media screen and (min-width: $large-screen) {
-
     // show menu on hover, rather than on click
     ul.navbar-nav li.dropdown:hover>.dropdown-menu {
         margin-top: 0;
         display: block;
     }
-
     section {
         padding-top: $large-vert-padding;
         padding-bottom: $large-vert-padding;

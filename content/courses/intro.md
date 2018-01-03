@@ -1,16 +1,48 @@
----
-name: "Intro to Web Development"
-weight: 1
-subtitle: "Learn to code your own websites by hand"
-description: "Learn to build robust, beautiful, interactive web applications.  This course focuses on the contemporary skills needed for a career in web development today."
-styles: "intro.css"
-status: "open"
-logo: "web_dev.svg"
-tuition: "350"
-courseSchedule: "Tuesday and Thursday evenings from 5:30pm to 8:30pm"
-courseLength: "4 weeks, 8 sessions total"
-courseType: "Evening / Part-Time"
----
++++
+name= "Intro to Web Development"
+weight= 1
+subtitle= "Learn to code your own websites by hand"
+description= "Learn to build robust, beautiful, interactive web applications.  This course focuses on the contemporary skills needed for a career in web development today."
+styles= "intro.css"
+status= "open"
+logo= "web_dev.svg"
+tuition= "350"
+courseSchedule= "Tuesday and Thursday evenings from 5:30pm to 8:30pm"
+courseLength= "4 weeks, 8 sessions total"
+courseType= "Evening / Part-Time"
+
+[[detailSchedule]]
+name = "Week 1"
+topic = "Intro to HTML & Git"
+logo = "web_dev.svg"
+fa = "fab fa-html5"
+contentPartial = "intro_to_web/week_1.html"
+items = ["css", "html"]
+
+[[detailSchedule]]
+name = "Week 2"
+topic = "CSS & Design"
+logo = "web_dev.svg"
+fa = "fab fa-css3-alt"
+contentPartial = "intro_to_web/week_2.html"
+items = ["js", "more js"]
+
+[[detailSchedule]]
+name = "Week 3"
+logo = "web_dev.svg"
+fa = "fab fa-node-js"
+topic = "JavaScript"
+contentPartial = "intro_to_web/week_3.html"
+items = ["js", "more js"]
+
+[[detailSchedule]]
+name = "Week 4"
+logo = "web_dev.svg"
+fa = "fas fa-flag-checkered"
+topic = "jQuery & Interactive Experiences"
+contentPartial = "intro_to_web/week_4.html"
+items = ["js", "more js"]
++++
 
 ## Overview
 
@@ -18,7 +50,7 @@ Build a strong software development foundation and learn how to use HTML, CSS, J
 
 This course guides students toward developing a well-rounded foundation of skills necessary for modern web development. These skills include HTML, CSS, and JavaScript coding; utilizing Git workflow processes; project organization; designing with wireframing; and employing introductory Agile development methods.
 
-Daytime and Nights & Weekend tracks are each 160 hours total. Course hours include lecture, lab, and coworking.
+This part-time evening track is 24 hours of hands-on classroom activity in total. Course hours include lecture, lab, mentoring.  Homework and graded assignments will be assigned for hours outside of the classroom.
 
 ## Outcomes
 

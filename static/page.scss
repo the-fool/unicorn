@@ -1,7 +1,9 @@
-body {
+@import "variables";
+#page-header {
+  h1 {
+    font-size: 2em;
+  }
 }
-
-
 .course-details {
   background-color: #666666;
   color: white;
@@ -15,4 +17,29 @@ body {
     padding-bottom: 1.5em;
     font-size: 1.3em;
   }
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h2:not(:first-of-type) {
+  margin-top: 1.5rem;
+}
+
+#schedule {
+  background-color: #efefef;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: $medium-screen) {
+  #page-header {
+    h1 {
+      font-size: 4em;
+    }
+  }
+  
 }
