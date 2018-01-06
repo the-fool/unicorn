@@ -39,7 +39,7 @@ items = ["js", "more js"]
 name = "Week 4"
 logo = "web_dev.svg"
 fa = "fas fa-flag-checkered"
-topic = "jQuery & Interactive Experiences"
+topic = "jQuery & UX"
 contentPartial = "intro_to_web/week_4.html"
 items = ["js", "more js"]
 +++

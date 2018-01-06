@@ -12,7 +12,7 @@
 
 </div>
 
-<div class="container">
+<div class="container" id="overview">
     <div class="row">
         <div class="col-md-8">
             {{ .Content }}
@@ -44,7 +44,7 @@
 <div class="container-fluid" id="schedule">
     <div class="row">
         <div class="container">
-            <h2>Course Schedule</h2>
+            <h2 class="heading">Course Schedule</h2>
 
             <div class="schedule-container">
 
@@ -54,8 +54,8 @@
                     <div class="top">
                         <i class="fab {{ .fa }}"></i>
                         <div class="title">
-                            <h4> {{ .name }} </h4>
-                            <h5> {{ .topic }} </h5>
+                            <h4 class="main"> {{ .name }} </h4>
+                            <h5 class="sub"> {{ .topic }} </h5>
                         </div>
                     </div>
 
