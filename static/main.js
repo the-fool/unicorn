@@ -23,7 +23,7 @@ function subscribe() {
     contentType: 'application/json',
     success: subscribeSuccess,
     error: subscribeError,
-    complete: function() {
+    complete: function () {
       button.prop('disabled', false);
     }
   });
@@ -37,3 +37,53 @@ function subscribeSuccess() {
 function subscribeError() {
   console.log('error');
 }
+
+
+function setUpNav() {
+  const overlay = $('#overlay');
+  const navbar = $('#navbarNav');
+  const body = $('body');
+
+  let overlayState = 0;
+
+  function showNav() {
+    overlay.show();
+    overlayState = 1;
+    navbar.addClass('show');
+    body.addClass('no-scroll');
+  }
+
+  function hideNav() {
+    overlay.hide();
+    overlayState = 0;
+    navbar.removeClass('show');
+    body.removeClass('no-scroll');
+  }
+
+  $('#navbar-toggler').click(() => {
+    if (overlayState === 0) {
+      showNav();
+    } else {
+      hideNav();
+    }
+  });
+
+  $('.nav-link').click(() => {
+
+    hideNav();
+    if (sr) {
+      sr.destroy();
+    }
+    document.documentElement.classList.remove('revealing');
+  });
+}
+
+$(function () {
+
+  window.sr = ScrollReveal();
+  
+  if (ScrollReveal.isSupported() && window.scrollY < 200) {
+    document.documentElement.classList.add('revealing');
+  }
+  setUpNav();
+});

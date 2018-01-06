@@ -5,7 +5,7 @@ $(function () {
 });
 
 function setUpScreenReveals() {
-  var sr = ScrollReveal();
+
   var scrollOpts = {
     duration: 1200,
     scale: 1
@@ -18,7 +18,7 @@ function setUpScreenReveals() {
     '#careers'
   ];
 
-  reveals.forEach(function(r) {
+  reveals.forEach(function (r) {
     sr.reveal(r + ' .sr', scrollOpts, 100);
   });
 }

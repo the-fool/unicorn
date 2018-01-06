@@ -2,6 +2,12 @@
 
 $p-width: 32rem;
 
+
+// if screen reveal is going, hide the things
+.revealing .sr {
+  visibility: hidden;
+}
+
 .full-abs {
   position: absolute;
   top: 0;
