@@ -1,14 +1,23 @@
 +++
 name= "Intro to Web Development"
 weight= 1
+
 subtitle= "Learn to code your own websites by hand"
-description= "Learn to build robust, beautiful, interactive web applications.  This course focuses on the contemporary skills needed for a career in web development today."
+
+description= "This course is designed to take you from zero prior experience with coding the web up to being ready & able to build your own websites by hand.  By the end you will be a self-reliant coder with strong base set of skills and ready to dive deeper into the web!"
+
 styles= "intro.css"
+
 status= "open"
+
 logo= "web_dev.svg"
+
 tuition= "350"
+
 courseSchedule= "Tuesday and Thursday evenings from 5:30pm to 8:30pm"
+
 courseLength= "4 weeks, 8 sessions total"
+
 courseType= "Evening / Part-Time"
 
 [[detailSchedule]]
