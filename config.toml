@@ -12,7 +12,7 @@ title = "Unicorn"
     [[params.facts]]
       big = "22,000"
       icon = "ic_trending_up_white_24px.svg"
-      sub = "New Softawer Jobs"
+      sub = "New Software Jobs"
       explanation = "Software development is one of the largest employment sectors in Washington State, with over 75,000 currently working.  State-level forecasts predict an average growth rate of 4.2% in the near term, with over 20,000 new jobs being added."
 
     [[params.facts]]
@@ -26,18 +26,18 @@ title = "Unicorn"
     [[params.manifesto]]
       title = "Career Focused"
       svg = "ic_school_white_24px.svg"
-      sub = "Local and regional employers and industry leaders are involved in your education.  Our curriculum is specially tailored to real needs in the job sector, and build blah blah "
+      sub = "Local employers and industry leaders are involved in your education.  Our curriculum is specially tailored to real demand in Spokane and the Inland Northwest. Join an expansive network of professionals and personalized career services"
 
     [[params.manifesto]]
       title = "Flexible Schedule"
       svg = "ic_free_breakfast_white_24px.svg"
-      sub = "You will learn to build your ideas with code"
+      sub = "Your time is important.  That's why we offer options.  You have the choice to take your education in the fast-lane with full-time all-day sessions, or gain the same skills through evening part-time courses."
 
 
     [[params.manifesto]]
-      title = "Think Like An Engineer"
+      title = "Real-World Skills"
       svg = "ic_dvr_white_24px.svg"
-      sub = "You will learn to build your ideas with code"
+      sub = "Coding is a craft, not a science.  Your education will be about making amazing things and realizing your ideas.  You will build up your portfolio of real projects & and demonstrable skills."
 
 
 

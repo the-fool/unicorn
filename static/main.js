@@ -68,12 +68,15 @@ function setUpNav() {
     }
   });
 
-  $('.nav-link').click(() => {
+  $('.nav-link:not(.dropdown-toggle)').click(() => {
 
     hideNav();
+
+    // we need to remove scroll-reveal stuff
     if (sr) {
       sr.destroy();
     }
+
     document.documentElement.classList.remove('revealing');
   });
 }
@@ -81,7 +84,7 @@ function setUpNav() {
 $(function () {
 
   window.sr = ScrollReveal();
-  
+
   if (ScrollReveal.isSupported() && window.scrollY < 200) {
     document.documentElement.classList.add('revealing');
   }
