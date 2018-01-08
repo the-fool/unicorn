@@ -1,10 +1,11 @@
 +++
 name= "Intro to Web Development"
+
 weight= 1
 
 subtitle= "Learn to code your own websites by hand"
 
-description= "This course is designed to take you from zero prior experience with coding the web up to being ready & able to build your own websites by hand.  By the end you will be a self-reliant coder with strong base set of skills and ready to dive deeper into the web!"
+description= "This course is designed to take you from zero prior experience with coding up to being ready & able to build your own websites by hand.  By the end you will be a self-reliant coder with strong base set of skills and ready to dive deeper into the web!"
 
 styles= "intro.css"
 
