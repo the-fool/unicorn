@@ -125,6 +125,15 @@ nav.navbar {
             top: 99px;
             padding: 20px;
             border-bottom: 5px solid $primary;
+
+            .nav-item {
+                font-size: 24px;
+            }
+
+            .dropdown-item {
+                white-space: normal;
+            }
+
             .nav-item+.nav-item {
                 margin-left: 0;
             }
@@ -153,6 +162,7 @@ nav.navbar {
     .nav-item {
         .nav-link {
             cursor: pointer;
+            line-height: 2em;
         }
         font-size: 16px;
         font-weight: 400;
@@ -160,7 +170,11 @@ nav.navbar {
         font-style: normal;
         letter-spacing: 3px;
         text-decoration: none;
-        line-height: 2em;
+
+        .dropdown-item {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
     }
 }
 

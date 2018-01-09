@@ -1,6 +1,9 @@
 {{ define "styles" }}
 <link rel="stylesheet" href="/dist/page.css">
-<link rel="stylesheet" href="/dist/{{ .Params.styles}}"> {{ end }} {{ define "header" }} {{ partial "navbar.html" . }} {{ end }} {{ define "main" }}
+<link rel="stylesheet" href="/dist/{{ .Params.styles}}"> 
+{{ end }} 
+
+{{ define "header" }} {{ partial "navbar.html" . }} {{ end }} {{ define "main" }}
 
 <div class="jumbotron jumbotron-fluid" id="page-header">
 
@@ -73,3 +76,7 @@
 </div>
 
 {{ end }}
+
+{{ define "scripts" }}
+<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+{{ end}}

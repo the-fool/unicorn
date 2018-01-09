@@ -83,10 +83,19 @@ function setUpNav() {
 
 $(function () {
 
+  var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight || e.clientHeight || g.clientHeight;
+
   window.sr = ScrollReveal();
 
-  if (ScrollReveal.isSupported() && window.scrollY < 200) {
+  if (x > 600 && ScrollReveal.isSupported() && window.scrollY < 200) {
     document.documentElement.classList.add('revealing');
+  } else {
+    sr = undefined;
   }
   setUpNav();
 });

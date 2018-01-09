@@ -7,9 +7,10 @@ $(function () {
 function setUpScreenReveals() {
 
   var scrollOpts = {
-    duration: 800,
+    duration: 1000,
     scale: 1,
-    distance: '30px'
+    distance: '20px',
+    mobile: false,
   };
   var reveals = [
     '#manifesto',
@@ -19,7 +20,9 @@ function setUpScreenReveals() {
     '#careers'
   ];
 
-  reveals.forEach(function (r) {
-    sr.reveal(r + ' .sr', scrollOpts, 100);
-  });
+  if (sr && ScrollReveal.isSupported()) {
+    reveals.forEach(function (r) {
+      sr.reveal(r + ' .sr', scrollOpts, 100);
+    });
+  }
 }
