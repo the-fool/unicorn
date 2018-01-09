@@ -7,7 +7,7 @@ $(function () {
 function setUpScreenReveals() {
 
   var scrollOpts = {
-    duration: 1200,
+    duration: 800,
     scale: 1,
     distance: '30px'
   };
