@@ -1,5 +1,33 @@
-<h1>
-    {{ .Params.title }}
-</h1>
+<a 
+ class="event-wrapper"
+ href="{{ .Params.eventURL }}" target="_blank">
 
-<h2>{{ .Params.date }} </h2>
+    <div class="date">
+        <div class="month">
+            {{ dateFormat "Jan" .Params.event_date }}
+        </div>
+        <div class="day">
+            {{ dateFormat "2" .Params.event_date }}
+        </div>
+
+        <div class="weekday">
+            {{ dateFormat "Wed." .Params.event_date }}
+        </div>
+    </div>
+
+    <div class="body">
+
+        <h1>
+            {{ .Params.title }}
+        </h1>
+    </div>
+
+    <div class="footer">
+        <div class="cost">
+            FREE
+        </div>
+        <div class="call-to-action">
+            Enroll Here
+        </div>
+    </div>
+</a>

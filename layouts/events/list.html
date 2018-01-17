@@ -1,8 +1,12 @@
+{{ define "styles" }}
+<link rel="stylesheet" href="/dist/events.css">
+{{ end }}
+
 {{ define "main" }}
-<h1>Events</h1>
  
-<ul>
-    {{ range .Data.Pages }}
+<ul id="events-list">
+    {{ range sort .Data.Pages ".Params.event_date" }}
+
     <li>
         {{ .Render "summary"}}
     </li>
