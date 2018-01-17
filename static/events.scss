@@ -1,5 +1,7 @@
-// neutralize the list-items
+@import "variables";
+
 ul#events-list {
+  // neutralize the list-items
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -7,20 +9,43 @@ ul#events-list {
   text-align: center;
 
   li {
-    max-width: 95%;
+    // custom containerizig
+    width: 95%;
+    max-width: 970px;
     margin: auto;
   }
 }
 
 .event-wrapper {
+  text-decoration: none;
+  background-color: transparent;
+  color: inherit;
+
+  &:hover {
+    outline-width: 0;
+    color: inherit;
+    text-decoration: none;
+  }
+
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 550px;
-  margin: auto;
+
   > * {
     text-align: center;
   }
 
+  .date {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px;
+    background-color: $gun-metal;
+    color: $white;
+
+    > * {
+      margin: 0 5px;
+    }
+  }
 
 }
