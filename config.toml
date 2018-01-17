@@ -2,6 +2,8 @@ baseURL = "http://unicorncode.org"
 languageCode = "en-us"
 title = "Unicorn"
 
+google_map_key= "AIzaSyAc2NqYnRWO7NCvDGowXQhaGtbMY9Qb3dQ"
+
 [params]
     [[params.facts]]
       big = "$84.5K"
