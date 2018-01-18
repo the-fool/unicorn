@@ -114,8 +114,13 @@ hr {
     .date {
       flex: 1;
       flex-direction: column;
+      
       .day {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
+      }
+
+      .month, .weekday {
+         font-size: 1.3rem;
       }
     }
     .body {
