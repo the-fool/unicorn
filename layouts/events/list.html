@@ -1,16 +1,49 @@
 {{ define "styles" }}
-<link rel="stylesheet" href="/dist/events.css">
-{{ end }}
+<link rel="stylesheet" href="/dist/events.css"> 
+{{ end }} 
 
 {{ define "main" }}
- 
-<ul id="events-list">
-    {{ range sort .Data.Pages ".Params.event_date" }}
 
-    <li>
-        {{ .Render "summary"}}
-    </li>
+<div class="jumbotron jumbotron-fluid" id="page-header">
 
-    {{ end }}
-</ul>
+    <div class="container">
+
+        <h1> 
+            Drop In & Learn
+        </h1>
+
+        <p>
+            Curious about coding?  Come join a free workshop!
+        </p>
+        <p>
+            All events are free & open for every level of experience.
+        </p>
+
+    </div>
+
+</div>
+
+<div id="main-content" class="container-fluid">
+    <div class="row">
+        <div class="col">
+            
+            <h2>
+                Upcoming Workshops & Events
+            </h2>
+
+            <hr>
+            
+            <ul id="events-list">
+                {{ range sort .Data.Pages ".Params.event_date" }}
+
+                <li>
+                    {{ .Render "summary"}}
+                </li>
+
+                {{ end }}
+            </ul>
+
+        </div>
+    </div>
+</div>
 {{ end }}

@@ -3,7 +3,10 @@ title= "Let's Make a Web-Graphic!"
 
 event_date= "2018-02-15"
 
-time= "5:30pm"
+
+event_time = "6:00p-8:30p"
+
+subtitle = "Intro to SVGs and Animation"
 
 location= "Spokane Startup"
 +++

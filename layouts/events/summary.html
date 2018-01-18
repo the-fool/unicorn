@@ -1,5 +1,5 @@
 <a 
- class="event-wrapper"
+ class="event-wrapper card card-1"
  href="{{ .Params.eventURL }}" target="_blank">
 
     <div class="date">
@@ -17,9 +17,17 @@
 
     <div class="body">
 
-        <h1>
+        <h3 class="title">
             {{ .Params.title }}
-        </h1>
+        </h3>
+
+        <div class="small">
+            {{ .Params.subtitle }}
+        </div>
+
+        <div class="time">
+            {{ .Params.event_time }}
+        </div>
     </div>
 
     <div class="footer">
