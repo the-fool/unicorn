@@ -1,7 +1,7 @@
 @import './_variables.scss';
 
 $p-width: 32rem;
-
+$banner-img: "/img/all_people.jpg";
 
 // if screen reveal is going, hide the things
 .revealing .sr {
@@ -72,7 +72,7 @@ section#intro {
 
   #bg {
     @extend .full-abs;
-    background-image: url("/img/dev_camp_compressed.jpg");
+    background-image: url($banner-img);
     background-size: cover;
     background-position: top;
     filter: brightness(0.4);
@@ -219,7 +219,7 @@ section#facts {
 
 
 section#manifesto {
-  background-color: $medium-gray;
+  background-color: #ececec;
 
   hr {
     width: 40%;
@@ -362,6 +362,9 @@ section#about {
 
 section#courses {
 
+  p {
+    text-align: center;
+  }
   #courses-list {
     .course-item {
       padding: 2rem 1rem;
