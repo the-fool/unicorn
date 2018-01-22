@@ -28,18 +28,18 @@ google_map_key= "AIzaSyAc2NqYnRWO7NCvDGowXQhaGtbMY9Qb3dQ"
     [[params.manifesto]]
       title = "Career Focused"
       svg = "ic_school_white_24px.svg"
-      sub = "Local employers and industry leaders are involved in your education.  Our curriculum is specially tailored to real demand in Spokane and the Inland Northwest. Join an expansive network of professionals and personalized career services"
+      sub = "Local employers and industry leaders are involved in your education.  Our curriculum is specially tailored to real demand in Spokane and the Inland Northwest. Join an expansive network of professionals and personalized career services."
 
     [[params.manifesto]]
       title = "Flexible Schedule"
       svg = "ic_free_breakfast_white_24px.svg"
-      sub = "Your time is important.  That's why we offer options.  You have the choice to take your education in the fast-lane with full-time all-day sessions, or gain the same skills through evening part-time courses."
+      sub = "Your time is important.  That's why we offer options.  You have the choice to take the moste focused and comprehensive approach to your education with immersive full-time coursework, or study only the most critical topics during evening part-time courses."
 
 
     [[params.manifesto]]
       title = "Real-World Skills"
       svg = "ic_dvr_white_24px.svg"
-      sub = "Coding is a craft, not a science.  Your education will be about making amazing things and realizing your ideas.  You will build up your portfolio of real projects & and demonstrable skills."
+      sub = "Coding is a craft, not a science.  At Unicorn, you will make amazing things and realizing your ideas.  You will build up your portfolio of projects & and demonstrable skills."
 
 
 

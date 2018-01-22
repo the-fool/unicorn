@@ -5,7 +5,7 @@ weight= 2
 
 subtitle= "Build your skillset for career in modern web development"
 
-description= "Learn to build robust, beautiful, interactive web applications.  This course focuses on the high-demand skills for a career in web development today.  You will hand-code every facet of an app -- from database to mobile interface, and learn along the way how to work professionally on the modern web platform."
+description= "Learn to build robust, beautiful, interactive web applications.  This course focuses on high-demand skills for a career in web development today.  You will hand-code every facet of an app -- from databases to mobile interfaces, and will learn how to work professionally on the modern web platform."
 
 styles= "full_stack.css"
 
