@@ -1,6 +1,6 @@
 +++
 
-zinger= "Everyone Can Learn To Code."
+zinger= "Coding Is For All Of Us."
 
 sub_zinger= "Evening, Part-Time, and Full-Time Classes in Coding & Design"
 
