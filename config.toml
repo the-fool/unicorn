@@ -33,7 +33,7 @@ google_map_key= "AIzaSyAc2NqYnRWO7NCvDGowXQhaGtbMY9Qb3dQ"
     [[params.manifesto]]
       title = "Flexible Schedule"
       svg = "ic_free_breakfast_white_24px.svg"
-      sub = "Your time is important.  That's why we offer options.  You have the choice to take the moste focused and comprehensive approach to your education with immersive full-time coursework, or study only the most critical topics during evening part-time courses."
+      sub = "Your time is important.  That's why we offer options.  You have the choice to take the most comprehensive approach to your education with in-depth, full-time sessions, or a broader investigation focusing on the most critical skills through part-time evening courses."
 
 
     [[params.manifesto]]
