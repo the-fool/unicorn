@@ -63,14 +63,14 @@ contentPartial = "full_stack/section_6.html"
 
 ## Overview
 
+Learning to code is more than just learning language syntax. The sorts of problems we tackle as developers require creative 
+inventiveness and knowing how to apply cutting-edge techniques.
 
-Learning to code is more than just learning language syntax.  The sorts of problems we tackle as developers require creativite inventiveness and knowing how to apply a plethora of cutting-edge techniques.
-
-This **Full-Stack Foundations** course is the perfect way to launch a career in modern web-development.  Learn how to hand-code your own web servers, administer databases, secure your systems from attack, and build beautiful interactive user-experiences on mobile & desktop alike.
+This **Full-Stack Foundations** course is the perfect way to launch a career in modern web-development. Learn how to hand-code your own web servers and administer databases, secure your systems from attack, and build attractive, interactive user-experiences on mobile & desktop.  
 
 ## Outcomes
 
-After completing this course, you will have coded the entire gauntlet of what makes up a modern web-application.  These skills are easily transferrable to other subject domains, and form a strong foundation on which to build specialized knowledge in web-programming.  This course will set the stage for your future endeavors, whether you want to go deeper into exciting UX-design, fight cyber-security on the front-lines, or process big data with artificial intelligence, or freelance as local developer in your community!
+After completing this course, you will have programmed each component of a modern web-application. These skills are easily transferrable to other subject domains, and form a strong foundation on which to build specialized knowledge in web-programming. This course will set the stage for your future endeavors, whether you want to go deeper into exciting UX-design, fight cyber-security on the front-lines, process big data with artificial intelligence, or freelance as a local developer in your community.
 
 Topics we will cover:
 

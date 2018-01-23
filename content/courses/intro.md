@@ -58,9 +58,9 @@ items = ["js", "more js"]
 
 Build a strong software development foundation and learn how to use HTML, CSS, JavaScript, and various libraries to create fully-functional web apps.
 
-This course guides students toward developing a well-rounded foundation of skills necessary for modern web development. These skills include HTML, CSS, and JavaScript coding; utilizing Git workflow processes; project organization; designing with wireframing; and employing introductory Agile development methods.
+This course guides students in developing a well-rounded skillset necessary for modern web development. This includes HTML, CSS, and JavaScript coding; utilizing Git workflow processes; project organization; designing with wireframing; and employing introductory Agile development methods.
 
-This part-time evening track is 24 hours of hands-on classroom activity in total. Course hours include lecture, lab, mentoring.  Homework and graded assignments will be assigned for hours outside of the classroom.
+This part-time evening track is 24 hours of hands-on classroom activity in total. Course hours include lecture, lab, and mentoring. Homework and graded assignments will be assigned outside of the classroom.
 
 ## Outcomes
 
