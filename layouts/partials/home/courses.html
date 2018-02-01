@@ -5,7 +5,8 @@
 
 
     <p>
-      In addition to full courses, be sure to check out our <a href="/events">free events and workshops</a>!
+      In addition to full courses, be sure to check out our
+      <a href="/events">free events and workshops</a>!
     </p>
     <div id="courses-list" class="sr">
 
@@ -30,9 +31,11 @@
 
         <div class="bot">
 
-          <a href="#" class="btn btn-primary disabled">
-            Coming Soon!
-          </a>
+          {{ if (eq .Params.status "open") }}
+          <a href="{{ .Params.link }}" class="btn btn-primary">Enroll Here</a>
+          {{ else }}
+          <a href="#" class="btn btn-primary disabled">Coming Soon!</a>
+          {{ end }}
         </div>
 
       </div>

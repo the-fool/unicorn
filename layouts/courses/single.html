@@ -31,7 +31,11 @@
                             <li> Tuition: ${{ .Params.tuition }} </li>
                         </ul>
                     </p>
+                    {{ if (eq .Params.status "open") }}
+                    <a href="{{ .Params.link }}" class="btn btn-primary">Enroll Here</a>
+                    {{ else }}
                     <a href="#" class="btn btn-primary disabled">Coming Soon!</a>
+                    {{ end }}
                 </div>
             </div>
         </div>

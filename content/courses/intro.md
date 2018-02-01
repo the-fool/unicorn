@@ -1,5 +1,5 @@
 +++
-name= "Intro to Web Development"
+name= "Intro to Web Coding"
 
 weight= 1
 
@@ -11,11 +11,13 @@ styles= "intro.css"
 
 status= "open"
 
+link= "https://www.eventbrite.com/e/intro-to-web-coding-tickets-42537603116"
+
 logo= "web_dev.svg"
 
 tuition= "350"
 
-courseSchedule= "Tuesday and Thursday evenings from 5:30pm to 8:30pm"
+courseSchedule= "Tuesday and Thursday evenings from 6:00pm to 8:30pm"
 
 courseLength= "4 weeks, 8 sessions total"
 
