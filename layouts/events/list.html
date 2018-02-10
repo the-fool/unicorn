@@ -36,9 +36,12 @@
             <ul id="events-list">
                 {{ range sort .Data.Pages ".Params.event_date" }}
 
+                {{ if gt .Params.event_date  ( now.Format "2006-01-02") }}
+
                 <li>
                     {{ .Render "summary"}}
                 </li>
+                {{ end }}
 
                 {{ end }}
             </ul>
