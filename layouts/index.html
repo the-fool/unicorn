@@ -1,8 +1,5 @@
 {{ define "styles" }}
-<link rel="stylesheet" href="/dist/home.css">
-{{ end }}
-
-{{ define "main" }}
+<link rel="stylesheet" href="/dist/home.css"> {{ end }} {{ define "main" }}
 <div class="container-fluid">
   <section id="intro" class="row">
     <div id="bg">
@@ -21,8 +18,17 @@
     -->
 
     <div id="intro-content" class="col">
+      <!--
       <h1>
         {{ .Params.zinger }}
+      </h1>
+    -->
+      <h1 id="zinger">
+        Coding is for
+        <span id="mutant">
+          All of Us.
+        </span>
+        <div class="invisible" id="cursor"></div>
       </h1>
 
       <br>
@@ -37,22 +43,11 @@
     </div>
   </section>
 
-  {{ partial "home/synopsis.html" . }}
-
-  {{ partial "home/manifesto.html" . }}
-
-  {{ partial "home/courses.html" . }}
-
-  {{ partial "home/careers.html" . }}
-
-  {{ partial "home/facts.html" . }}
-
-  {{ partial "home/about.html" . }}
+  {{ partial "home/synopsis.html" . }} {{ partial "home/manifesto.html" . }} {{ partial "home/courses.html" . }} {{ partial "home/careers.html" . }}
+  {{ partial "home/facts.html" . }} {{ partial "home/about.html" . }}
 
 
 </div>
-{{ end }}
-
-{{ define "scripts" }}
+{{ end }} {{ define "scripts" }}
 <script defer src="/dist/home.js"></script>
 {{ end }}

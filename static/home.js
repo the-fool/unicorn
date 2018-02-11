@@ -2,6 +2,18 @@ $(function () {
   if (window.scrollY < 200) {
     setUpScreenReveals();
   }
+  if (window.innerWidth > 580) {
+    consoleEffect();
+  } 
+  
+  /*
+  maybe later . . . 
+  window.addEventListener('resize', function(e) {
+    const w = e.target;
+  });
+  */
+
+
 });
 
 function setUpScreenReveals() {
@@ -25,4 +37,83 @@ function setUpScreenReveals() {
       sr.reveal(r + ' .sr', scrollOpts, 100);
     });
   }
+}
+
+function consoleEffect() {
+  const eraseSpeed = 70;
+  const writeSpeed = 160;
+  const cursorBlinkSpeed = 600;
+  const initialDelay = 2000;
+  const afterEraseDelay = 800;
+  const afterWriteDelay = 3000;
+
+  const mutant = document.getElementById('mutant');
+  
+  let i = 0;
+  
+  const clauses = [
+    'All of Us.', 
+    'Artists.', 
+    'Freelancers.', 
+    'Dog Lovers.',
+    'Bakers.',
+    'Interior Designers.',
+  ];
+
+  function erase() {
+    function eraseOne() {
+      const text = mutant.innerHTML;
+      mutant.innerHTML = text.substring(0, text.length - 1);
+      checkWhetherToErase();
+    }
+
+    function checkWhetherToErase() {
+      if (mutant.innerHTML.length > 0) {
+        setTimeout(eraseOne, eraseSpeed);
+      } else {
+        pauseUntilWrite();
+      }
+    }
+
+    eraseOne();
+  }
+
+  function pauseUntilWrite() {
+    setTimeout(write, afterEraseDelay);
+  }
+
+  function write() {
+    i = (i + 1) % clauses.length;
+    const clause = clauses[i];
+    function writeOne() {
+      const current = mutant.innerHTML;
+      const l = current.length;
+      const text = current + clause[l];
+      mutant.innerHTML = text;
+      checkWhetherToWrite();
+    }
+
+    function checkWhetherToWrite() {
+      if (mutant.innerHTML.length >= clause.length) {
+        pauseUntilErase();
+      } else {
+        setTimeout(writeOne, writeSpeed);
+      }
+    }
+
+    writeOne();
+
+  }
+
+  function pauseUntilErase() {
+    setTimeout(erase, afterWriteDelay);
+  }
+
+  setTimeout(erase, initialDelay);
+
+  const cursor$ = $('#cursor');
+  setInterval(function() {
+    cursor$.toggleClass('invisible');
+  }, cursorBlinkSpeed);
+
 }

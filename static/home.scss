@@ -25,6 +25,41 @@ svg {
   stroke: $primary;
 }
 
+$cutoff-for-console-effect: 580px;
+
+#zinger {
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #cursor {
+    display: none;
+    height: 3rem;
+    vertical-align: text-bottom;
+    //margin-left: 2px;
+    width: 1rem;
+    position: relative;
+    background-color: $primary;
+    &.invisible {
+      visibility: hidden;
+    }
+  }
+
+  @media screen and (min-width: $cutoff-for-console-effect) {
+    #cursor {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    #cursor {
+      height: 3.4rem;
+    }
+    
+  }
+
+}
+
 section#intro {
   //border-top: 8px solid $primary;
   text-align: center;
