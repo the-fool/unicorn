@@ -32,7 +32,16 @@
             </h2>
 
             <hr>
-            
+
+            {{ $events := (where .Data.Pages ".Params.event_date" ">" ( now.Format "2006-01-02" )) }}
+            {{ if lt (len $events) 1 }}
+            <div id="no-events">
+              <p>No upcoming free events scheduled</p>
+
+              <p><em>Check back soon!</em></p>
+            </div>
+
+            {{ else }}
             <ul id="events-list">
                 {{ range sort .Data.Pages ".Params.event_date" }}
 
@@ -41,11 +50,13 @@
                 <li>
                     {{ .Render "summary"}}
                 </li>
+
                 {{ end }}
 
                 {{ end }}
             </ul>
 
+            {{ end }}
         </div>
     </div>
 </div>
