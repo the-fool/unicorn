@@ -148,6 +148,8 @@ section#hero {
 
 section#synopsis {
   background-color: $primary;
+  position: relative;
+  padding-bottom: 2rem;
 
   &:before {
     border-radius: 2px;
@@ -155,10 +157,9 @@ section#synopsis {
     content: "";
     background-image: url('/img/dots.png');
     background-size: 500px;
-    bottom: -20px;
+    bottom: -60px;
     height: 100%;
     position: absolute;
-    right: -20px;
     width: 100%;
     z-index: -1
   }
@@ -174,6 +175,21 @@ section#synopsis {
   #brief-synopsis {
     color: $white;
     text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #cta {
+
+    a {
+      width: 100%;
+      border-radius: 0;
+      padding: 1rem 2rem;
+      border: transparent;
+      background-color: $gun-metal;
+      color: $white;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
   }
 
   @media screen and (min-width: $medium-screen) {
@@ -183,15 +199,22 @@ section#synopsis {
 
     max-width: 750px;
     margin: auto;
-    padding: 2.5rem 2rem;
+    padding: 3rem 2.5rem;
     top: -150px;
     margin-bottom: -100px;
     position: relative;
     border-radius: 4px;
 
+
+    &:before {
+      bottom: -20px;
+      right: -20px;
+    }
+
     #brief-synopsis {
       font-size: 1.2rem;
       line-height: 2rem;
+      margin-bottom: initial;
     }
 
     svg {
@@ -206,6 +229,17 @@ section#synopsis {
       padding-left: $svg-glyph-margin - $splitter;
       border-left: 2px solid $white;
       margin-bottom: 0;
+    }
+
+    #cta {
+      position: absolute;
+      right: 0;
+      bottom: -70px;
+
+      a {
+        border-radius: 4px;
+        width: initial;
+      }
     }
   }
 
@@ -272,6 +306,7 @@ section#facts {
 
 
 section#manifesto {
+  margin-top: 3rem;
   background-color: #ececec;
 
   hr {
@@ -305,6 +340,10 @@ section#manifesto {
       margin: auto;
       max-width: $p-width;
     }
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    margin-top: 0;
   }
 }
 
