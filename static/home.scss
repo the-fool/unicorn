@@ -50,6 +50,14 @@ section#intro {
     font-size: 2rem;
     position: relative;
 
+    #three-lines {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 23px;
+      transform: rotate(40deg) translateX(-50%);
+    }
+
     #cursor {
       display: none;
       height: 2.5rem;
@@ -87,10 +95,7 @@ section#intro {
       }
 
       #three-lines {
-        position: absolute;
-        right: 0;
-        top: 23px;
-        transform: rotate(40deg) translateX(-50%);
+        display: block;
       }
 
     }
