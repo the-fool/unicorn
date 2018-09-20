@@ -89,18 +89,6 @@ strong {
   color: $primary;
 }
 
-// NAVBAR
-@media screen and (max-width: 550px) {
-  #brand-text {
-    font-size: 17px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  #brand-text {
-    display: none;
-  }
-}
 
 #overlay {
   display: none;
@@ -138,7 +126,7 @@ nav.navbar {
       background: $white;
       left: 0;
       width: 100%;
-      top: 96px;
+      top: 64px;
       padding: 20px;
       border-bottom: 5px solid $primary;
 
@@ -159,9 +147,10 @@ nav.navbar {
 
   .navbar-toggler {
     border: 0;
+
     .navbar-toggler-icon {
-      height: 2em;
-      width: 2em;
+      height: 1.5em;
+      width: 1.5em;
     }
   }
 
@@ -175,8 +164,8 @@ nav.navbar {
 
     svg {
       margin-right: 0.7rem;
-      height: 4rem;
-      width: 4rem;
+      height: 2rem;
+      width: 2rem;
       stroke: $primary;
       fill: $primary;
     }
@@ -212,6 +201,27 @@ nav.navbar {
     .dropdown-item {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
+    }
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    .navbar-brand {
+      svg {
+        height: 4rem;
+        width: 4rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    #brand-text {
+      font-size: 17px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    #brand-text {
+      display: none;
     }
   }
 }
