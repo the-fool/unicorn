@@ -2,7 +2,7 @@ $(function () {
   if (window.scrollY < 200) {
     setUpScreenReveals();
   }
-  if (window.innerWidth > 580) {
+  if (window.innerWidth > 580 || true) {
     consoleEffect();
   } 
   
@@ -62,13 +62,13 @@ function consoleEffect() {
 
   function erase() {
     function eraseOne() {
-      const text = mutant.innerText;
-      mutant.innerText = text.substring(0, text.length - 1);
+      const text = mutant.innerHTML;
+      mutant.innerHTML = text.substring(0, text.length - 1);
       checkWhetherToErase();
     }
 
     function checkWhetherToErase() {
-      if (mutant.innerText.length > 0) {
+      if (mutant.innerHTML.length > 0) {
         setTimeout(eraseOne, eraseSpeed);
       } else {
         pauseUntilWrite();
@@ -86,15 +86,15 @@ function consoleEffect() {
     i = (i + 1) % clauses.length;
     const clause = clauses[i];
     function writeOne() {
-      const current = mutant.innerText;
+      const current = mutant.innerHTML;
       const l = current.length;
       const text = current + clause[l];
-      mutant.innerText = text;
+      mutant.innerHTML = text;
       checkWhetherToWrite();
     }
 
     function checkWhetherToWrite() {
-      if (mutant.innerText.length >= clause.length) {
+      if (mutant.innerHTML.length >= clause.length) {
         pauseUntilErase();
       } else {
         setTimeout(writeOne, writeSpeed);

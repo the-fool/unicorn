@@ -42,12 +42,13 @@ section#intro {
 
   h1 {
     color: $dark-gray;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
 
   h2 {
     font-size: 2rem;
+    font-weight: bold;
     position: relative;
 
     #three-lines {
@@ -59,7 +60,7 @@ section#intro {
     }
 
     #cursor {
-      display: none;
+      display: inline-block;
       height: 2.5rem;
       vertical-align: text-bottom;
       top: -4px;
@@ -72,20 +73,10 @@ section#intro {
         visibility: hidden;
       }
     }
-
-    @media screen and (min-width: $cutoff-for-console-effect) {
-      #cursor {
-        display: inline-block;
-      }
-    }
   }
 
 
   @media screen and (min-width: $medium-screen) {
-
-    h1 {
-      font-size: 1rem;
-    }
 
     h2 {
       font-size: 4rem;
@@ -117,18 +108,40 @@ section#intro {
       }
     }
   }
+
+  @media screen and (min-width: $large-screen) {
+    h2 {
+      br {
+        display: none;
+      }
+    }
+  }
 }
 
 section#hero {
-  position: relative;
-  height: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
 
   #bg {
-    @extend .full-abs;
+    // @extend .full-abs;;
     background-image: url($banner-img);
     background-size: cover;
     background-position: top;
+    width: 100%;
+    height: 60vh;
     //filter: brightness(0.4);
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    #bg {
+      height: 75vh;
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    #bg {
+      height: 100%;
+    }
   }
 }
 
@@ -153,6 +166,14 @@ section#synopsis {
     $splitter: 0.5rem;
     $padder: 1rem;
 
+    max-width: 750px;
+    margin: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    top: -150px;
+    margin-bottom: -100px;
+    position: relative;
+
     #brief-synopsis {
       font-size: 1.2rem;
       line-height: 2rem;
@@ -172,6 +193,10 @@ section#synopsis {
       border-left: 2px solid $white;
       margin-bottom: 0;
     }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    top: -200px;
   }
 }
 
