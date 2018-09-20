@@ -149,6 +149,20 @@ section#hero {
 section#synopsis {
   background-color: $primary;
 
+  &:before {
+    border-radius: 2px;
+    filter: grayscale(0.7);
+    content: "";
+    background-image: url('/img/dots.png');
+    background-size: 500px;
+    bottom: -20px;
+    height: 100%;
+    position: absolute;
+    right: -20px;
+    width: 100%;
+    z-index: -1
+  }
+
   svg {
     height: $svg-glyph-width;
     width: $svg-glyph-width;
@@ -164,16 +178,16 @@ section#synopsis {
 
   @media screen and (min-width: $medium-screen) {
     $extra: 2rem;
-    $splitter: 0.5rem;
+    $splitter: 1rem;
     $padder: 1rem;
 
     max-width: 750px;
     margin: auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 2.5rem 2rem;
     top: -150px;
     margin-bottom: -100px;
     position: relative;
+    border-radius: 4px;
 
     #brief-synopsis {
       font-size: 1.2rem;
@@ -185,7 +199,6 @@ section#synopsis {
       height: $svg-glyph-width + $extra;
       width: $svg-glyph-width + $extra;
       stroke: transparent;
-
     }
 
     #brief-synopsis {
