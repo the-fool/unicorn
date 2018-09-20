@@ -56,7 +56,6 @@ function consoleEffect() {
     'Artists.', 
     'Freelancers.', 
     'Dog Lovers.',
-    'Bakers.',
     'Interior Designers.',
   ];
 
