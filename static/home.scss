@@ -3,6 +3,11 @@
 $p-width: 32rem;
 $banner-img: "/img/people_compressed.jpg";
 
+// Thin out the border on the home page
+nav.navbar {
+  border-bottom: 2px solid $primary !important;
+}
+
 // if screen reveal is going, hide the things
 .revealing .sr {
   visibility: hidden;
@@ -43,6 +48,7 @@ section#intro {
 
   h2 {
     font-size: 2rem;
+    position: relative;
 
     #cursor {
       display: none;
@@ -75,11 +81,18 @@ section#intro {
 
     h2 {
       font-size: 4rem;
-      margin-bottom: 10vh;
 
       #cursor {
         height: 4rem;
       }
+
+      #three-lines {
+        position: absolute;
+        right: 0;
+        top: 23px;
+        transform: rotate(40deg) translateX(-50%);
+      }
+
     }
 
     a {

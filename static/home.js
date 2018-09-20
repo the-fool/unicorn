@@ -41,7 +41,7 @@ function setUpScreenReveals() {
 
 function consoleEffect() {
   const eraseSpeed = 70;
-  const writeSpeed = 160;
+  const writeSpeed = 100;
   const cursorBlinkSpeed = 600;
   const initialDelay = 3000;
   const afterEraseDelay = 800;
