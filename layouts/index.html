@@ -1,20 +1,19 @@
 {{ define "styles" }}
-<link rel="stylesheet" href="/dist/home.css"> {{ end }} {{ define "main" }}
+<link rel="stylesheet" href="/dist/home.css"> 
+{{ end }} 
+
+{{ define "main" }}
 <div class="container-fluid">
   <section id="intro" class="row">
     <div id="intro-content" class="col">
-      <h1 id="zinger">
+      <h1> {{ .Params.zinger }} </h1>
+
+      <h2>
         Coding is for
         <span id="mutant">
           All of Us.
         </span>
         <div class="invisible" id="cursor"></div>
-      </h1>
-
-      <br>
-
-      <h2>
-        {{ .Params.sub_zinger }}
       </h2>
 
       <br>
@@ -26,12 +25,17 @@
     <div id="bg"></div>
   </section>
 
-  {{ partial "home/synopsis.html" . }} {{ partial "home/manifesto.html" . }} {{ partial "home/courses.html" . }} {{ partial "home/careers.html" . }}
-  {{ partial "home/facts.html" . }} {{ partial "home/about.html" . }}
+  {{ partial "home/synopsis.html" . }} 
+  {{ partial "home/manifesto.html" . }} 
+  {{ partial "home/courses.html" . }} 
+  {{ partial "home/careers.html" . }}
+  {{ partial "home/facts.html" . }} 
+  {{ partial "home/about.html" . }}
 
 
 </div>
 {{ end }} 
+
 {{ define "scripts" }}
 <script src="/dist/scrollreveal.js"></script>
 <script defer src="/dist/home.js"></script>

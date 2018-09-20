@@ -1,8 +1,6 @@
 +++
 
-zinger= "Coding is for All of Us."
-
-sub_zinger= "Evening, Part-Time, and Full-Time Classes in Coding & Design"
+zinger= "Learn to Code in Spokane | Evening, Part-Time, and Full-Time Courses in Coding & Design"
 
 cta= "Upcoming Courses"
 synopsis= """
