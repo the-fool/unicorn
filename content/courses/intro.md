@@ -9,9 +9,9 @@ description= "This course is designed to take you from zero programming experien
 
 styles= "intro.css"
 
-status= "open"
+status= "closed"
 
-link= "https://www.eventbrite.com/e/intro-to-web-coding-tickets-42537603116"
+link= ""
 
 logo= "web_dev.svg"
 

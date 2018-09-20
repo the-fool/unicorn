@@ -11,7 +11,7 @@ styles= "full_stack.css"
 
 status= "closed"
 
-event_link= " "
+link= " "
 
 logo= "full_stack.svg"
 
