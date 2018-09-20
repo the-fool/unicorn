@@ -27,112 +27,75 @@ svg {
 
 $cutoff-for-console-effect: 580px;
 
-#zinger {
-
-  #cursor {
-    display: none;
-    height: 2.5rem;
-    vertical-align: text-bottom;
-    top: -4px;
-    //margin-left: 2px;
-    width: 1rem;
-    position: relative;
-    background-color: $primary;
-    &.invisible {
-      visibility: hidden;
-    }
-  }
-
-  @media screen and (min-width: $cutoff-for-console-effect) {
-    #cursor {
-      display: inline-block;
-    }
-  }
-
-  @media screen and (min-width: $medium-screen) {
-    #cursor {
-      height: 3.4rem;
-    }
-    
-  }
-}
 
 section#intro {
   color: $navy;
 
-  #intro-header {
-    z-index: 9;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    left: 1rem;
-    right: 1rem;
+  * {
+    text-transform: initial;
+  }
 
-    > * {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
+  h1 {
+    color: $dark-gray;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+
+    #cursor {
+      display: none;
+      height: 2.5rem;
+      vertical-align: text-bottom;
+      top: -4px;
+      //margin-left: 2px;
+      width: 1rem;
+      position: relative;
+      background-color: $primary;
+
+      &.invisible {
+        visibility: hidden;
+      }
     }
 
-    h5 {
-      color: $white;
-      font-size: 0.7rem;
-      margin: 0 0.4rem;
+    @media screen and (min-width: $cutoff-for-console-effect) {
+      #cursor {
+        display: inline-block;
+      }
     }
   }
 
-  #intro-content {
-    * {
-      text-transform: initial;
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-    }
-  }
 
   @media screen and (min-width: $medium-screen) {
 
-    #intro-header {
-      top: 2rem;
-      left: 2rem;
-      right: 2rem;
+    h1 {
+      font-size: 1rem;
+    }
 
-      h5 {
-        font-size: 1.2rem;
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 10vh;
+
+      #cursor {
+        height: 4rem;
       }
     }
-    #intro-content {
 
-      h1 {
-        font-size: 3rem;
+    a {
+      padding: 0.7rem;
+      background-color: transparent;
+      border-width: 3px;
+      font-size: 1.5rem;
+      color: #fff;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
       }
 
-      h2 {
-        font-size: 2.1rem;
-        margin-bottom: 10vh;
-      }
-
-      a {
-        padding: 0.7rem;
-        background-color: transparent;
-        border-width: 3px;
-        font-size: 1.5rem;
-        color: #fff;
-
-        &:hover {
-          background-color: rgba(255,255,255,0.1);
-        }
-
-        &:focus {
-          outline: 0;
-          box-shadow: none;
-        }
+      &:focus {
+        outline: 0;
+        box-shadow: none;
       }
     }
   }
@@ -141,6 +104,7 @@ section#intro {
 section#hero {
   position: relative;
   height: 100%;
+
   #bg {
     @extend .full-abs;
     background-image: url($banner-img);
@@ -181,8 +145,9 @@ section#synopsis {
       height: $svg-glyph-width + $extra;
       width: $svg-glyph-width + $extra;
       stroke: transparent;
-      
+
     }
+
     #brief-synopsis {
       text-align: left;
       padding-left: $svg-glyph-margin - $splitter;
@@ -215,13 +180,16 @@ section#facts {
 
     header {
       margin-left: 1rem;
-      > * {
+
+      >* {
         color: $white;
         margin-bottom: 0;
       }
+
       h4 {
         font-size: 3rem;
       }
+
       p {
         font-size: small;
         text-transform: uppercase;
@@ -238,6 +206,7 @@ section#facts {
 
   @media screen and (min-width: $large-screen) {
     padding: 2rem 0;
+
     .fact-item {
       margin-bottom: 0;
     }
@@ -270,7 +239,8 @@ section#manifesto {
       text-transform: uppercase;
     }
 
-    svg, h4 {
+    svg,
+    h4 {
       margin-bottom: 1rem;
     }
 
@@ -314,7 +284,7 @@ section#careers {
     background-attachment: scroll;
   }
 
-  
+
   #company-list {
     display: flex;
     flex-wrap: wrap;
@@ -392,6 +362,7 @@ section#courses {
   p {
     text-align: center;
   }
+
   #courses-list {
     .course-item {
       padding: 2rem 1rem;

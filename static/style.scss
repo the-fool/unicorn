@@ -118,9 +118,11 @@ strong {
     display: block;
   }
 }
+
 .dropdown-item {
   color: inherit;
 }
+
 nav.navbar {
   font-family: quicksand;
   z-index: 1023;
@@ -180,13 +182,17 @@ nav.navbar {
       fill: $primary;
     }
 
-    #brand-text-top {
-      line-height: 1.6rem;
-      font-weight: bold;
-    }
+    #brand-text {
+      margin-left: 1rem;
 
-    #brand-text-bottom {
-      font-size: 0.9rem;
+      #brand-text-top {
+        line-height: 1.6rem;
+        font-weight: bold;
+      }
+
+      #brand-text-bottom {
+        font-size: 0.9rem;
+      }
     }
   }
 

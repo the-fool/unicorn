@@ -1,6 +1,6 @@
 +++
 
-zinger= "Learn to Code in Spokane | Evening, Part-Time, and Full-Time Courses in Coding & Design"
+zinger= "Learn to Code in Spokane - Evening and Full-Time Courses"
 
 cta= "Upcoming Courses"
 synopsis= """

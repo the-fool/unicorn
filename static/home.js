@@ -43,7 +43,7 @@ function consoleEffect() {
   const eraseSpeed = 70;
   const writeSpeed = 160;
   const cursorBlinkSpeed = 600;
-  const initialDelay = 2000;
+  const initialDelay = 3000;
   const afterEraseDelay = 800;
   const afterWriteDelay = 3000;
 
@@ -62,13 +62,13 @@ function consoleEffect() {
 
   function erase() {
     function eraseOne() {
-      const text = mutant.innerHTML;
-      mutant.innerHTML = text.substring(0, text.length - 1);
+      const text = mutant.innerText;
+      mutant.innerText = text.substring(0, text.length - 1);
       checkWhetherToErase();
     }
 
     function checkWhetherToErase() {
-      if (mutant.innerHTML.length > 0) {
+      if (mutant.innerText.length > 0) {
         setTimeout(eraseOne, eraseSpeed);
       } else {
         pauseUntilWrite();
@@ -86,15 +86,15 @@ function consoleEffect() {
     i = (i + 1) % clauses.length;
     const clause = clauses[i];
     function writeOne() {
-      const current = mutant.innerHTML;
+      const current = mutant.innerText;
       const l = current.length;
       const text = current + clause[l];
-      mutant.innerHTML = text;
+      mutant.innerText = text;
       checkWhetherToWrite();
     }
 
     function checkWhetherToWrite() {
-      if (mutant.innerHTML.length >= clause.length) {
+      if (mutant.innerText.length >= clause.length) {
         pauseUntilErase();
       } else {
         setTimeout(writeOne, writeSpeed);
