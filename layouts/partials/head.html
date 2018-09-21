@@ -25,7 +25,13 @@
 <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
-<link rel="stylesheet" href="/dist/style.css">
+
+{{ $vendor := resources.Get "dist/vendor.css" }}
+{{ $secureVendor := $vendor | resources.Fingerprint "sha512" }}
+{{ $mine := resources.Get "dist/style.css" }}
+{{ $secureMine := $mine | resources.Fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $secureVendor.Permalink }}">
+<link rel="stylesheet" href="{{ $secureMine.Permalink }}">
 
 
 <!-- Favicon -->

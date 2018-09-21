@@ -1,1 +1,2 @@
-aws s3 cp ./public s3://unicorncode.org --recursive --cache-control no-cache
+aws s3 cp ./public s3://unicorncode.org --recursive --cache-control max-age=36000 --exclude "*.html" --exclude "*.xml" 
+aws s3 cp ./public s3://unicorncode.org --recursive --cache-control no-cache --exclude "*" --include "*.html" --include "*.xml"

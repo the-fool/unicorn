@@ -44,6 +44,11 @@
 {{ end }} 
 
 {{ define "scripts" }}
-<script src="/dist/scrollreveal.js"></script>
-<script defer src="/dist/home.js"></script>
+
+{{ $sr := resources.Get "dist/scrollreveal.js" }}
+{{ $secureSr := $sr | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $homejs := resources.Get "dist/home.js" }}
+{{ $secureHomejs := $homejs | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $secureSr.Permalink }}" integrity="{{ $secureSr.Data.Integrity }}"></script>
+<script defer type="text/javascript" src="{{ $secureHomejs.Permalink }}" integrity="{{ $secureHomejs.Data.Integrity }}"></script>
 {{ end }}
