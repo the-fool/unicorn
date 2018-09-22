@@ -4,3 +4,4 @@ public
 lambdas/**
 !lambdas/**/handler.py
 !lambdas/**/requirements.txt
+npm-debug.log
