@@ -8,20 +8,21 @@ subtitle= "Learn to code your own websites by hand"
 description= "This course is designed to take you from zero programming experience to building your own websites by hand.  By the end you will be a self-reliant coder with a strong skillset and a readiness to dive deeper into the web!"
 
 styles= "intro.css"
+track = "Weekend days"
 
-status= "closed"
+status= "open"
 
 link= ""
 
 logo= "web_dev.svg"
 
-tuition= "350"
+tuition= "280"
 
-courseSchedule= "Tuesday and Thursday evenings from 6:00pm to 8:30pm"
+courseSchedule= "Saturdays from 9:30am to 1pm"
 
-courseLength= "4 weeks, 8 sessions total"
+courseLength= "4 weeks total"
 
-courseType= "Evening / Part-Time"
+courseType= "Weekends / Part-Time"
 
 [[detailSchedule]]
 name = "Week 1"

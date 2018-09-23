@@ -16,7 +16,7 @@ link= " "
 logo= "full_stack.svg"
 
 tuition= "4500"
-
+track = "Weekdays"
 courseSchedule= "Monday-Friday 8:30am - 5:00pm"
 
 courseLength= "12 weeks, 60 sessions total"
