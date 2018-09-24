@@ -1,5 +1,5 @@
 +++
-name= "Intro to Web Coding"
+name= "Web Coding Foundations"
 
 weight= 1
 
@@ -8,17 +8,17 @@ subtitle= "Learn to code your own websites by hand"
 description= "This course is designed to take you from zero programming experience to building your own websites by hand.  By the end you will be a self-reliant coder with a strong skillset and a readiness to dive deeper into the web!"
 
 styles= "intro.css"
-track = "Weekend days"
+track = "Weeknights and/or Weekends"
 
 status= "open"
 
-link= ""
+link= "https://www.eventbrite.com/e/web-coding-foundations-html-css-javascript-tickets-50566752518"
 
 logo= "web_dev.svg"
 
 tuition= "280"
 
-courseSchedule= "Saturdays from 9:30am to 1pm"
+courseSchedule= "Saturdays from 9:30am to 12pm, Tuesdays from 5:30 to 8pm"
 
 courseLength= "4 weeks total"
 
@@ -59,22 +59,27 @@ items = ["js", "more js"]
 
 ## Overview
 
-Build a strong software development foundation and learn how to use HTML, CSS, JavaScript, and various libraries to create fully-functional web apps.
+You can create your own websites & apps!
 
-This course guides students in developing a well-rounded skillset necessary for modern web development. This includes HTML, CSS, and JavaScript coding; utilizing Git workflow processes; project organization; designing with wireframing; and employing introductory Agile development methods.
+In this project-based course you will learn the foundations of web programming. Over 4 weeks, you will hand-craft modern, interactive websites from the ground up with code you write from scratch. You will also upload your portfolio to the web for the world to see. By completing this course you will be ready to apply these skills to your own projects, work as a freelancer, or pursue a career in web development.
 
-This part-time evening track is 24 hours of hands-on classroom activity in total. Course hours include lecture, lab, and mentoring. Homework and graded assignments will be assigned outside of the classroom.
+During each week, you will work on roughly 10 hours worth of video material and exercises, building up a cumulative final portfolio. The in-person class sessions will introduce new topics, and provide personal coaching for your path. Every person's learning style is different, and you're encourage to contact the instructor at any time for extra help. "Office hours" are always available.
 
 ## Outcomes
 
-At the end of this course, you will:
+You will develop your skills in:
 
-* Define the structure of a web page utilizing the semantic hierarchical structural conventions of HTML5.
+* HTML5
+* CSS3
+* JavaScript
+* Git
+* Industry-standard practice
+* Portfolio design
+* Job-interview strategies
 
-* Apply CSS and HTML to implement page layout styles including grid, fluid, and responsive techniques; and to style content with color, typography, and images.
+## Structure
 
-* Utilize Javascript to make web projects interactive, such that user input is stored and processed to create updated and personalized content when a user interacts with a page.
+We value your time, and so the course has two identical meetings per week: Tuesdays from 5:30 - 8:00pm and Saturdays from 9:30am to noon. By signing up, you are free to attend either (or both!) as your schedule allows.
 
-* Write JavaScript that leverages the fundamentals of Computer Science, the Object-Oriented Programming paradigm, basic data types, data structures, and basic algorithms, so that the code is efficient, error-free, and matches commonly accepted standards and practices of syntax and style, as measured by the code’s functionality and ability to pass a code linter.
-
-* Utilize industry standard version control tools and workflows, including Git and GitHub, to write functional, properly styled code and to work efficiently and harmoniously in professional environments.
+This course prepares you for a job as a web developer. Creating websites, designing UX, and building mobile apps are all built on the skills you'll gain in this course.
+Build a strong software development foundation and learn how to use HTML, CSS, JavaScript, and various libraries to create fully-functional web apps.

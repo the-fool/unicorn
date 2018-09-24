@@ -28,11 +28,11 @@
             <ul>
               <li> {{ .Params.track }}: {{ .Params.courseLength }} </li>
               <li> Schedule: {{ .Params.courseSchedule }} </li>
-              <li> Tuition: ${{ .Params.tuition }} </li>
+              <li> Tuition: ${{ .Params.tuition }} (scholarships available)</li>
             </ul>
           </p>
           {{ if (eq .Params.status "open") }}
-          <a href="{{ .Params.link }}" class="btn btn-primary">Enroll Here</a>
+          <a href="{{ .Params.link }}" class="btn btn-primary" target="_blank">Enroll Here</a>
 
           {{ else }}
           <a href="#" class="btn btn-primary disabled">Coming Soon!</a>

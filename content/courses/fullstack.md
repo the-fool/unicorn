@@ -1,5 +1,5 @@
 +++
-name= "Full-Stack Foundations"
+name= "Advanced Full-Stack"
 
 weight= 2
 
