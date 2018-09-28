@@ -1,11 +1,11 @@
-$(function () {
+$(function() {
   if (window.scrollY < 200) {
     setUpScreenReveals();
   }
   if (window.innerWidth > 580 || true) {
     consoleEffect();
-  } 
-  
+  }
+
   /*
   maybe later . . . 
   window.addEventListener('resize', function(e) {
@@ -17,6 +17,22 @@ $(function () {
 });
 
 function setUpScreenReveals() {
+
+
+  var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight || e.clientHeight || g.clientHeight;
+
+  window.sr = ScrollReveal();
+
+  if (x > 600 && ScrollReveal.isSupported() && window.scrollY < 200) {
+    document.documentElement.classList.add('revealing');
+  } else {
+    sr = undefined;
+  }
 
   var scrollOpts = {
     duration: 1000,
@@ -33,7 +49,7 @@ function setUpScreenReveals() {
   ];
 
   if (sr && ScrollReveal.isSupported()) {
-    reveals.forEach(function (r) {
+    reveals.forEach(function(r) {
       sr.reveal(r + ' .sr', scrollOpts, 100);
     });
   }
@@ -48,13 +64,13 @@ function consoleEffect() {
   const afterWriteDelay = 3000;
 
   const mutant = document.getElementById('mutant');
-  
+
   let i = 0;
-  
+
   const clauses = [
-    'All of Us.', 
-    'Artists.', 
-    'Freelancers.', 
+    'All of Us.',
+    'Artists.',
+    'Freelancers.',
     'Dog Lovers.',
     'Interior Designers.',
   ];
@@ -84,6 +100,7 @@ function consoleEffect() {
   function write() {
     i = (i + 1) % clauses.length;
     const clause = clauses[i];
+
     function writeOne() {
       const current = mutant.innerHTML;
       const l = current.length;
