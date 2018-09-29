@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gulp build",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "minhtml": "gulp minhtml"
   },
   "dependencies": {
     "autoprefixer": "^7.1.6",

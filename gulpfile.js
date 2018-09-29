@@ -38,4 +38,13 @@ gulp.task('watch', function() {
   gulp.watch(['./static/*.scss', './static/bootswatch/*.scss', './static/*.js'], ['build']);
 });
 
+gulp.task('minhtml', function() {
+  gulp.src(['./public/**/*.html'])
+  .pipe(htmlmin({
+    collapseWhitespace: true,
+    removeComments: true
+  }))
+  .pipe(gulp.dest('./public'))
+});
+
 gulp.task('build', ['sass', 'js']);
