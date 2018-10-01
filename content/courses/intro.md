@@ -18,7 +18,7 @@ logo= "web_dev.svg"
 
 tuition= "280"
 
-courseSchedule= "Saturdays from 9:30am to 12pm, Tuesdays from 5:30 to 8pm"
+courseSchedule= "Saturdays from 9:30am to 12pm, Mondays from 5:30 to 8pm"
 
 courseLength= "4 weeks total"
 
@@ -79,7 +79,7 @@ You will develop your skills in:
 
 ## Structure
 
-We value your time, and so the course has two identical meetings per week: Tuesdays from 5:30 - 8:00pm and Saturdays from 9:30am to noon. By signing up, you are free to attend either (or both!) as your schedule allows.
+We value your time, and so the course has two identical meetings per week: Mondays from 5:30 - 8:00pm and Saturdays from 9:30am to noon. By signing up, you are free to attend either (or both!) as your schedule allows.
 
 This course prepares you for a job as a web developer. Creating websites, designing UX, and building mobile apps are all built on the skills you'll gain in this course.
 Build a strong software development foundation and learn how to use HTML, CSS, JavaScript, and various libraries to create fully-functional web apps.
