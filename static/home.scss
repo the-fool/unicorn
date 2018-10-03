@@ -237,8 +237,14 @@ section#synopsis {
       bottom: -70px;
 
       a {
-        border-radius: 4px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
         width: initial;
+
+        &:hover {
+          box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+          color: #ffe3d6;
+        }
       }
     }
   }
@@ -307,7 +313,11 @@ section#facts {
 
 section#manifesto {
   margin-top: 3rem;
-  background-color: #ececec;
+  background-color: #535353;
+
+  h3 {
+    color: $white;
+  }
 
   hr {
     width: 40%;
@@ -322,13 +332,15 @@ section#manifesto {
 
     svg {
       stroke: transparent;
-      fill: $dark-gray;
+      fill: $white;
       height: $svg-glyph-width;
       width: $svg-glyph-width;
     }
 
     h4 {
       text-transform: uppercase;
+      font-weight: bold;
+      color: $primary;
     }
 
     svg,
@@ -337,6 +349,7 @@ section#manifesto {
     }
 
     p {
+      color: $white;
       margin: auto;
       max-width: $p-width;
     }

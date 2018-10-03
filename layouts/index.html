@@ -9,9 +9,7 @@
       <h1> {{ .Params.zinger }} </h1>
 
       <h2>
-        Coding is for&nbsp;<br>
-        <span id="mutant">
-          All of Us.
+        Coding is for&nbsp;<br><span id="mutant">All of Us.
         </span>
         <div class="invisible" id="cursor"></div>
 
@@ -48,6 +46,6 @@
 {{ $secureSr := $sr | resources.Minify | resources.Fingerprint "sha512" }}
 {{ $homejs := resources.Get "dist/home.js" }}
 {{ $secureHomejs := $homejs | resources.Minify | resources.Fingerprint "sha512" }}
-<script type="text/javascript" src="{{ $secureSr.Permalink }}" integrity="{{ $secureSr.Data.Integrity }}"></script>
-<script defer type="text/javascript" src="{{ $secureHomejs.Permalink }}" integrity="{{ $secureHomejs.Data.Integrity }}"></script>
+<script type="text/javascript" src="{{ $secureSr.Permalink }}"></script>
+<script defer type="text/javascript" src="{{ $secureHomejs.Permalink }}"></script>
 {{ end }}

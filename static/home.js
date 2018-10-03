@@ -72,6 +72,7 @@ function consoleEffect() {
     'Artists.',
     'Freelancers.',
     'Dog Lovers.',
+    'Home Brewers.',
     'Interior Designers.',
   ];
 
