@@ -10,15 +10,15 @@ description= "This course is designed to take you from zero programming experien
 styles= "intro.css"
 track = "Weeknights and/or Weekends"
 
-status= "open"
+status= "closed"
 
-link= "https://www.eventbrite.com/e/web-coding-foundations-html-css-javascript-tickets-50566752518"
+link= " "
 
 logo= "web_dev.svg"
 
 tuition= "280"
 
-courseSchedule= "Saturdays from 9:30am to 12pm, Mondays from 5:30 to 8pm"
+courseSchedule= "Saturdays from 9:30am to 12pm"
 
 courseLength= "4 weeks total"
 
